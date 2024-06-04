@@ -1,0 +1,4 @@
+make[3]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+build/common.inc:52: "Warning: deprecated cpp0x=1 is used, stdver must be used instead. Building in stdver=c++0x mode."
+../../build/Makefile.tbb:32: CONFIG: cfg=debug arch=intel64 compiler=gcc target=linux runtime=cc7.3.0_libc2.23_kernel4.15.0
+../../build/Makefile.tbb:32: CONFIG: cfg=release arch=intel64 compiler=gcc target=linux runtime=cc7.3.0_libc2.23_kernel4.15.0

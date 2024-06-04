@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/home/qqf/zcy/secp256k1-ac8ccf29.tar.gz'
+tag=''

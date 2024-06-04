@@ -1,0 +1,1148 @@
+Performing C SOURCE FILE Test HAVE_C_FLOATING_POINT_OPTIMIZATION_PROBLEMS failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fdb26/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fdb26.dir/build.make CMakeFiles/cmTC_fdb26.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fdb26.dir/src.c.o
+/usr/bin/cc    -DHAVE_C_FLOATING_POINT_OPTIMIZATION_PROBLEMS  -O3 -fexpensive-optimizations   -o CMakeFiles/cmTC_fdb26.dir/src.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fdb26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdb26.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_C_FLOATING_POINT_OPTIMIZATION_PROBLEMS  -O3 -fexpensive-optimizations    CMakeFiles/cmTC_fdb26.dir/src.c.o  -o cmTC_fdb26 -rdynamic 
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+  int main (int argc, char **argv)
+  {
+    double n[21] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 1, 1, 1, 1, 1, 1, 1,1 };
+    double m= 0, s= 0;
+    int i;
+    for(i= 0; i < 21; i++)
+    {
+      double m_kminusone= m;
+      m= m_kminusone + (n[i] - m_kminusone) / (double) (i + 2);
+      s= s + (n[i] - m_kminusone) * (n[i] - m);
+    }
+    /*
+      s should now be either 5e 74 d1 45 17 5d 14 40 or
+      40 14 5d 17 45 d1 74 5e, depending on endianness. If the floating point
+      operations are over optimized, the least significant byte is 5d instead
+      of 5e.
+    */
+    return (*(unsigned char*)(&s) == 0x5e ||
+            *((unsigned char*)(&s) + 7) == 0x5e);
+  }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLOATING_POINT_OPTIMIZATION_PROBLEMS failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4da5/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_f4da5.dir/build.make CMakeFiles/cmTC_f4da5.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4da5.dir/src.cxx.o
+/usr/bin/c++     -DHAVE_CXX_FLOATING_POINT_OPTIMIZATION_PROBLEMS  -O3 -fexpensive-optimizations   -o CMakeFiles/cmTC_f4da5.dir/src.cxx.o -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f4da5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4da5.dir/link.txt --verbose=1
+/usr/bin/c++    -DHAVE_CXX_FLOATING_POINT_OPTIMIZATION_PROBLEMS  -O3 -fexpensive-optimizations    CMakeFiles/cmTC_f4da5.dir/src.cxx.o  -o cmTC_f4da5 -rdynamic 
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+  int main (int argc, char **argv)
+  {
+    double n[21] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                     0, 0, 0, 1, 1, 1, 1, 1, 1, 1,1 };
+    double m= 0, s= 0;
+    int i;
+    for(i= 0; i < 21; i++)
+    {
+      double m_kminusone= m;
+      m= m_kminusone + (n[i] - m_kminusone) / (double) (i + 2);
+      s= s + (n[i] - m_kminusone) * (n[i] - m);
+    }
+    /*
+      s should now be either 5e 74 d1 45 17 5d 14 40 or
+      40 14 5d 17 45 d1 74 5e, depending on endianness. If the floating point
+      operations are over optimized, the least significant byte is 5d instead
+      of 5e.
+    */
+    return (*(unsigned char*)(&s) == 0x5e ||
+            *((unsigned char*)(&s) + 7) == 0x5e);
+  }
+Performing C++ SOURCE FILE Test HAVE_LLVM_LIBCPP failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71120/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_71120.dir/build.make CMakeFiles/cmTC_71120.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71120.dir/src.cxx.o
+/usr/bin/c++     -DHAVE_LLVM_LIBCPP   -o CMakeFiles/cmTC_71120.dir/src.cxx.o -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_71120
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71120.dir/link.txt --verbose=1
+/usr/bin/c++    -DHAVE_LLVM_LIBCPP    CMakeFiles/cmTC_71120.dir/src.cxx.o  -o cmTC_71120 -rdynamic 
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+#include <ciso646>
+int main()
+{
+#ifdef _LIBCPP_VERSION
+  return 0;
+#else
+  return 1;
+#endif
+}
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_738d3/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_738d3.dir/build.make CMakeFiles/cmTC_738d3.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_738d3.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_738d3.dir/CheckSymbolExists.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_738d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_738d3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_738d3.dir/CheckSymbolExists.c.o  -o cmTC_738d3 -rdynamic 
+CMakeFiles/cmTC_738d3.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_738d3.dir/build.make:97: recipe for target 'cmTC_738d3' failed
+make[4]: *** [cmTC_738d3] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_738d3/fast' failed
+make[3]: *** [cmTC_738d3/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+File /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbfe7/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_cbfe7.dir/build.make CMakeFiles/cmTC_cbfe7.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbfe7.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cbfe7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cbfe7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbfe7.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_cbfe7.dir/CheckFunctionExists.c.o  -o cmTC_cbfe7 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cbfe7.dir/build.make:97: recipe for target 'cmTC_cbfe7' failed
+make[4]: *** [cmTC_cbfe7] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cbfe7/fast' failed
+make[3]: *** [cmTC_cbfe7/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_331de/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_331de.dir/build.make CMakeFiles/cmTC_331de.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_331de.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_331de.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_331de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_331de.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTC_331de.dir/CheckFunctionExists.c.o  -o cmTC_331de -rdynamic 
+CMakeFiles/cmTC_331de.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘floor’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_331de.dir/build.make:97: recipe for target 'cmTC_331de' failed
+make[4]: *** [cmTC_331de] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_331de/fast' failed
+make[3]: *** [cmTC_331de/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function crypt exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a12d0/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a12d0.dir/build.make CMakeFiles/cmTC_a12d0.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a12d0.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=crypt   -o CMakeFiles/cmTC_a12d0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a12d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a12d0.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=crypt    CMakeFiles/cmTC_a12d0.dir/CheckFunctionExists.c.o  -o cmTC_a12d0 -rdynamic 
+CMakeFiles/cmTC_a12d0.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘crypt’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a12d0.dir/build.make:97: recipe for target 'cmTC_a12d0' failed
+make[4]: *** [cmTC_a12d0] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a12d0/fast' failed
+make[3]: *** [cmTC_a12d0/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7e319/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7e319.dir/build.make CMakeFiles/cmTC_7e319.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e319.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_7e319.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7e319
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e319.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dlopen    CMakeFiles/cmTC_7e319.dir/CheckFunctionExists.c.o  -o cmTC_7e319 -rdynamic 
+CMakeFiles/cmTC_7e319.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘dlopen’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7e319.dir/build.make:97: recipe for target 'cmTC_7e319' failed
+make[4]: *** [cmTC_7e319] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7e319/fast' failed
+make[3]: *** [cmTC_7e319/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function timer_create exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b3e2a/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b3e2a.dir/build.make CMakeFiles/cmTC_b3e2a.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b3e2a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=timer_create   -o CMakeFiles/cmTC_b3e2a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b3e2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3e2a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=timer_create    CMakeFiles/cmTC_b3e2a.dir/CheckFunctionExists.c.o  -o cmTC_b3e2a -rdynamic 
+CMakeFiles/cmTC_b3e2a.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘timer_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b3e2a.dir/build.make:97: recipe for target 'cmTC_b3e2a' failed
+make[4]: *** [cmTC_b3e2a] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b3e2a/fast' failed
+make[3]: *** [cmTC_b3e2a/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function atomic_thread_fence exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3f724/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3f724.dir/build.make CMakeFiles/cmTC_3f724.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f724.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=atomic_thread_fence   -o CMakeFiles/cmTC_3f724.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3f724
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f724.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atomic_thread_fence    CMakeFiles/cmTC_3f724.dir/CheckFunctionExists.c.o  -o cmTC_3f724 -rdynamic 
+CMakeFiles/cmTC_3f724.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘atomic_thread_fence’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3f724.dir/build.make:97: recipe for target 'cmTC_3f724' failed
+make[4]: *** [cmTC_3f724] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3f724/fast' failed
+make[3]: *** [cmTC_3f724/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function atomic_thread_fence exists in the atomic failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fff75/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fff75.dir/build.make CMakeFiles/cmTC_fff75.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fff75.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=atomic_thread_fence   -o CMakeFiles/cmTC_fff75.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fff75
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fff75.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=atomic_thread_fence    CMakeFiles/cmTC_fff75.dir/CheckFunctionExists.c.o  -o cmTC_fff75 -rdynamic -latomic 
+CMakeFiles/cmTC_fff75.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘atomic_thread_fence’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fff75.dir/build.make:97: recipe for target 'cmTC_fff75' failed
+make[4]: *** [cmTC_fff75] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fff75/fast' failed
+make[3]: *** [cmTC_fff75/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4645e/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4645e.dir/build.make CMakeFiles/cmTC_4645e.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4645e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4645e.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: ieeefp.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_4645e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4645e.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_4645e.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4645e/fast' failed
+make[3]: *** [cmTC_4645e/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if files curses.h;term.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_200ee/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_200ee.dir/build.make CMakeFiles/cmTC_200ee.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_200ee.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_200ee.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: curses.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_200ee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_200ee.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_200ee.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_200ee/fast' failed
+make[3]: *** [cmTC_200ee/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <curses.h>
+#include <term.h>
+
+
+int main(void){return 0;}
+
+Determining if files vis.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_234a6/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_234a6.dir/build.make CMakeFiles/cmTC_234a6.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_234a6.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_234a6.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:17: fatal error: vis.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_234a6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_234a6.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_234a6.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_234a6/fast' failed
+make[3]: *** [cmTC_234a6/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <vis.h>
+
+
+int main(void){return 0;}
+
+Determining if files sasl/sasl.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f301d/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_f301d.dir/build.make CMakeFiles/cmTC_f301d.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f301d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_f301d.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: fatal error: sasl/sasl.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_f301d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f301d.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_f301d.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f301d/fast' failed
+make[3]: *** [cmTC_f301d/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <sasl/sasl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/devpoll.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8fcc0/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8fcc0.dir/build.make CMakeFiles/cmTC_8fcc0.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFiles.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: fatal error: sys/devpoll.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_8fcc0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_8fcc0.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8fcc0/fast' failed
+make[3]: *** [cmTC_8fcc0/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <sys/devpoll.h>
+
+
+int main(void){return 0;}
+
+Determining if the function _aligned_malloc exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20c84/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_20c84.dir/build.make CMakeFiles/cmTC_20c84.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20c84.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=_aligned_malloc   -o CMakeFiles/cmTC_20c84.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_20c84
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20c84.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_aligned_malloc    CMakeFiles/cmTC_20c84.dir/CheckFunctionExists.c.o  -o cmTC_20c84 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_20c84.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘_aligned_malloc’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_20c84.dir/build.make:97: recipe for target 'cmTC_20c84' failed
+make[4]: *** [cmTC_20c84] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_20c84/fast' failed
+make[3]: *** [cmTC_20c84/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function printstack exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8311d/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_8311d.dir/build.make CMakeFiles/cmTC_8311d.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8311d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=printstack   -o CMakeFiles/cmTC_8311d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8311d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8311d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=printstack    CMakeFiles/cmTC_8311d.dir/CheckFunctionExists.c.o  -o cmTC_8311d -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_8311d.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘printstack’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8311d.dir/build.make:97: recipe for target 'cmTC_8311d' failed
+make[4]: *** [cmTC_8311d] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8311d/fast' failed
+make[3]: *** [cmTC_8311d/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function directio exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9c1cb/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_9c1cb.dir/build.make CMakeFiles/cmTC_9c1cb.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9c1cb.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=directio   -o CMakeFiles/cmTC_9c1cb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c1cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c1cb.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=directio    CMakeFiles/cmTC_9c1cb.dir/CheckFunctionExists.c.o  -o cmTC_9c1cb -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_9c1cb.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘directio’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9c1cb.dir/build.make:97: recipe for target 'cmTC_9c1cb' failed
+make[4]: *** [cmTC_9c1cb] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9c1cb/fast' failed
+make[3]: *** [cmTC_9c1cb/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function compress exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_33954/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_33954.dir/build.make CMakeFiles/cmTC_33954.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33954.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=compress   -o CMakeFiles/cmTC_33954.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_33954
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33954.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=compress    CMakeFiles/cmTC_33954.dir/CheckFunctionExists.c.o  -o cmTC_33954 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_33954.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘compress’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_33954.dir/build.make:97: recipe for target 'cmTC_33954' failed
+make[4]: *** [cmTC_33954] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_33954/fast' failed
+make[3]: *** [cmTC_33954/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethrtime exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec190/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ec190.dir/build.make CMakeFiles/cmTC_ec190.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec190.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethrtime   -o CMakeFiles/cmTC_ec190.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ec190
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec190.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethrtime    CMakeFiles/cmTC_ec190.dir/CheckFunctionExists.c.o  -o cmTC_ec190 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_ec190.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘gethrtime’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ec190.dir/build.make:97: recipe for target 'cmTC_ec190' failed
+make[4]: *** [cmTC_ec190] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ec190/fast' failed
+make[3]: *** [cmTC_ec190/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getpassphrase exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_27b61/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_27b61.dir/build.make CMakeFiles/cmTC_27b61.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_27b61.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=getpassphrase   -o CMakeFiles/cmTC_27b61.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_27b61
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27b61.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpassphrase    CMakeFiles/cmTC_27b61.dir/CheckFunctionExists.c.o  -o cmTC_27b61 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_27b61.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘getpassphrase’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_27b61.dir/build.make:97: recipe for target 'cmTC_27b61' failed
+make[4]: *** [cmTC_27b61] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_27b61/fast' failed
+make[3]: *** [cmTC_27b61/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function issetugid exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_003d4/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_003d4.dir/build.make CMakeFiles/cmTC_003d4.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_003d4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=issetugid   -o CMakeFiles/cmTC_003d4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_003d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_003d4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=issetugid    CMakeFiles/cmTC_003d4.dir/CheckFunctionExists.c.o  -o cmTC_003d4 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_003d4.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘issetugid’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_003d4.dir/build.make:97: recipe for target 'cmTC_003d4' failed
+make[4]: *** [cmTC_003d4] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_003d4/fast' failed
+make[3]: *** [cmTC_003d4/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setfd exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_335a9/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_335a9.dir/build.make CMakeFiles/cmTC_335a9.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_335a9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=setfd   -o CMakeFiles/cmTC_335a9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_335a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_335a9.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setfd    CMakeFiles/cmTC_335a9.dir/CheckFunctionExists.c.o  -o cmTC_335a9 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_335a9.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘setfd’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_335a9.dir/build.make:97: recipe for target 'cmTC_335a9' failed
+make[4]: *** [cmTC_335a9] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_335a9/fast' failed
+make[3]: *** [cmTC_335a9/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_096f8/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_096f8.dir/build.make CMakeFiles/cmTC_096f8.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_096f8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_096f8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_096f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_096f8.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strlcpy    CMakeFiles/cmTC_096f8.dir/CheckFunctionExists.c.o  -o cmTC_096f8 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_096f8.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘strlcpy’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_096f8.dir/build.make:97: recipe for target 'cmTC_096f8' failed
+make[4]: *** [cmTC_096f8] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_096f8/fast' failed
+make[3]: *** [cmTC_096f8/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_716b3/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_716b3.dir/build.make CMakeFiles/cmTC_716b3.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_716b3.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_716b3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_716b3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_716b3.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strlcat    CMakeFiles/cmTC_716b3.dir/CheckFunctionExists.c.o  -o cmTC_716b3 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_716b3.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘strlcat’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_716b3.dir/build.make:97: recipe for target 'cmTC_716b3' failed
+make[4]: *** [cmTC_716b3] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_716b3/fast' failed
+make[3]: *** [cmTC_716b3/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fgetln exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c6fb2/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c6fb2.dir/build.make CMakeFiles/cmTC_c6fb2.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c6fb2.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=fgetln   -o CMakeFiles/cmTC_c6fb2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c6fb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6fb2.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fgetln    CMakeFiles/cmTC_c6fb2.dir/CheckFunctionExists.c.o  -o cmTC_c6fb2 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_c6fb2.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘fgetln’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c6fb2.dir/build.make:97: recipe for target 'cmTC_c6fb2' failed
+make[4]: *** [cmTC_c6fb2] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c6fb2/fast' failed
+make[3]: *** [cmTC_c6fb2/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function tell exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fba55/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fba55.dir/build.make CMakeFiles/cmTC_fba55.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fba55.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=tell   -o CMakeFiles/cmTC_fba55.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fba55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fba55.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tell    CMakeFiles/cmTC_fba55.dir/CheckFunctionExists.c.o  -o cmTC_fba55 -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_fba55.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘tell’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fba55.dir/build.make:97: recipe for target 'cmTC_fba55' failed
+make[4]: *** [cmTC_fba55] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fba55/fast' failed
+make[3]: *** [cmTC_fba55/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function ntohll exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2824a/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2824a.dir/build.make CMakeFiles/cmTC_2824a.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2824a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=ntohll   -o CMakeFiles/cmTC_2824a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2824a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2824a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ntohll    CMakeFiles/cmTC_2824a.dir/CheckFunctionExists.c.o  -o cmTC_2824a -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_2824a.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘ntohll’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2824a.dir/build.make:97: recipe for target 'cmTC_2824a' failed
+make[4]: *** [cmTC_2824a] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2824a/fast' failed
+make[3]: *** [cmTC_2824a/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the function kqueue exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a479b/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a479b.dir/build.make CMakeFiles/cmTC_a479b.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a479b.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=kqueue   -o CMakeFiles/cmTC_a479b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a479b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a479b.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=kqueue    CMakeFiles/cmTC_a479b.dir/CheckFunctionExists.c.o  -o cmTC_a479b -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_a479b.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘kqueue’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a479b.dir/build.make:97: recipe for target 'cmTC_a479b' failed
+make[4]: *** [cmTC_a479b] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a479b/fast' failed
+make[3]: *** [cmTC_a479b/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the FIONREAD exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ba2a0/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ba2a0.dir/build.make CMakeFiles/cmTC_ba2a0.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba2a0.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ba2a0.dir/CheckSymbolExists.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:23: fatal error: sys/filio.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_ba2a0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ba2a0.dir/CheckSymbolExists.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_ba2a0.dir/CheckSymbolExists.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ba2a0/fast' failed
+make[3]: *** [cmTC_ba2a0/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+File /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/filio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FIONREAD
+  return ((int*)(&FIONREAD))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SIGEV_PORT exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b1d1/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_7b1d1.dir/build.make CMakeFiles/cmTC_7b1d1.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b1d1.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_7b1d1.dir/CheckSymbolExists.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:25: fatal error: sys/siginfo.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_7b1d1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7b1d1.dir/CheckSymbolExists.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_7b1d1.dir/CheckSymbolExists.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7b1d1/fast' failed
+make[3]: *** [cmTC_7b1d1/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+File /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+#include <time.h>
+#include <sys/siginfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGEV_PORT
+  return ((int*)(&SIGEV_PORT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function kqueue exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3ecf/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c3ecf.dir/build.make CMakeFiles/cmTC_c3ecf.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c3ecf.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=kqueue   -o CMakeFiles/cmTC_c3ecf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c3ecf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3ecf.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=kqueue    CMakeFiles/cmTC_c3ecf.dir/CheckFunctionExists.c.o  -o cmTC_c3ecf -rdynamic -lm -lcrypt -ldl -lpthread -lrt 
+CMakeFiles/cmTC_c3ecf.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘kqueue’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c3ecf.dir/build.make:97: recipe for target 'cmTC_c3ecf' failed
+make[4]: *** [cmTC_c3ecf] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c3ecf/fast' failed
+make[3]: *** [cmTC_c3ecf/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Determining if the EVFILT_TIMER exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0e22b/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0e22b.dir/build.make CMakeFiles/cmTC_0e22b.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e22b.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_0e22b.dir/CheckSymbolExists.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:23: fatal error: sys/event.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_0e22b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0e22b.dir/CheckSymbolExists.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_0e22b.dir/CheckSymbolExists.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0e22b/fast' failed
+make[3]: *** [cmTC_0e22b/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+File /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/event.h>
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef EVFILT_TIMER
+  return ((int*)(&EVFILT_TIMER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff319/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_ff319.dir/build.make CMakeFiles/cmTC_ff319.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff319.dir/TestEndianess.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ff319.dir/TestEndianess.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_ff319
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff319.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ff319.dir/TestEndianess.c.o  -o cmTC_ff319 -rdynamic 
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file netinet/in6.h exists failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb43c/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_cb43c.dir/build.make CMakeFiles/cmTC_cb43c.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb43c.dir/CheckIncludeFile.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS   -o CMakeFiles/cmTC_cb43c.dir/CheckIncludeFile.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:25: fatal error: netinet/in6.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_cb43c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cb43c.dir/CheckIncludeFile.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_cb43c.dir/CheckIncludeFile.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cb43c/fast' failed
+make[3]: *** [cmTC_cb43c/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN_SIN_LEN failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29c70/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_29c70.dir/build.make CMakeFiles/cmTC_29c70.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29c70.dir/src.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -DHAVE_SOCKADDR_IN_SIN_LEN   -o CMakeFiles/cmTC_29c70.dir/src.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c:8:42: error: ‘struct sockaddr_in’ has no member named ‘sin_len’
+    (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+                                          ^
+CMakeFiles/cmTC_29c70.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_29c70.dir/src.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_29c70.dir/src.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_29c70/fast' failed
+make[3]: *** [cmTC_29c70/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+   return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN6_SIN6_LEN failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b95c/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4b95c.dir/build.make CMakeFiles/cmTC_4b95c.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b95c.dir/src.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -DHAVE_SOCKADDR_IN6_SIN6_LEN   -o CMakeFiles/cmTC_4b95c.dir/src.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.c:8:43: error: ‘struct sockaddr_in6’ has no member named ‘sin6_len’
+    (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+                                           ^
+CMakeFiles/cmTC_4b95c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4b95c.dir/src.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_4b95c.dir/src.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4b95c/fast' failed
+make[3]: *** [cmTC_4b95c/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+   return 0;
+}
+
+Performing C++ SOURCE FILE Test HAVE_IMPLICIT_DEPENDENT_NAME_TYPING failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a900/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2a900.dir/build.make CMakeFiles/cmTC_2a900.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a900.dir/src.cxx.o
+/usr/bin/c++   -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS  -DHAVE_IMPLICIT_DEPENDENT_NAME_TYPING   -o CMakeFiles/cmTC_2a900.dir/src.cxx.o -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx: In member function ‘void ct2<T>::func()’:
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx:15:5: error: need ‘typename’ before ‘std::vector<T>::iterator’ because ‘std::vector<T>’ is a dependent scope
+     std::vector<T>::iterator itr = vec.begin();
+     ^
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx:15:30: error: expected ‘;’ before ‘itr’
+     std::vector<T>::iterator itr = vec.begin();
+                              ^
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘void ct2<T>::func() [with T = double]’:
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx:21:13:   required from here
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx:15:5: error: dependent-name ‘std::vector<T>::iterator’ is parsed as a non-type, but instantiation yields a type
+     std::vector<T>::iterator itr = vec.begin();
+     ^
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/src.cxx:15:5: note: say ‘typename std::vector<T>::iterator’ if a type is meant
+CMakeFiles/cmTC_2a900.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2a900.dir/src.cxx.o' failed
+make[4]: *** [CMakeFiles/cmTC_2a900.dir/src.cxx.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2a900/fast' failed
+make[3]: *** [cmTC_2a900/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+  #include <vector>
+  template<typename T>
+  class ct2
+  {
+  public:
+    typedef T type;
+    void func();
+  };
+
+  template<typename T>
+  void ct2<T>::func()
+  {
+    std::vector<T> vec;
+    std::vector<T>::iterator itr = vec.begin();
+  }
+
+  int main(int argc, char **argv)
+  {
+    ct2<double> o2;
+    o2.func();
+    return 0;
+  }
+  
+Determining if files numaif.h exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b73a/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_4b73a.dir/build.make CMakeFiles/cmTC_4b73a.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4b73a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS   -o CMakeFiles/cmTC_4b73a.dir/CheckIncludeFiles.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: numaif.h: 没有那个文件或目录
+compilation terminated.
+CMakeFiles/cmTC_4b73a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4b73a.dir/CheckIncludeFiles.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_4b73a.dir/CheckIncludeFiles.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4b73a/fast' failed
+make[3]: *** [cmTC_4b73a/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+Source:
+/* */
+#include <numaif.h>
+
+
+int main(void){return 0;}
+
+Determining size of socklen_t failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5a2cf/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5a2cf.dir/build.make CMakeFiles/cmTC_5a2cf.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a2cf.dir/SIZEOF_SOCKLEN_T.c.o
+/usr/bin/cc  -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS   -o CMakeFiles/cmTC_5a2cf.dir/SIZEOF_SOCKLEN_T.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CheckTypeSize/SIZEOF_SOCKLEN_T.c
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CheckTypeSize/SIZEOF_SOCKLEN_T.c:17:22: error: ‘socklen_t’ undeclared here (not in a function)
+ #define SIZE (sizeof(socklen_t))
+                      ^
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CheckTypeSize/SIZEOF_SOCKLEN_T.c:19:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles/cmTC_5a2cf.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5a2cf.dir/SIZEOF_SOCKLEN_T.c.o' failed
+make[4]: *** [CMakeFiles/cmTC_5a2cf.dir/SIZEOF_SOCKLEN_T.c.o] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5a2cf/fast' failed
+make[3]: *** [cmTC_5a2cf/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CMakeTmp'
+
+/home/qqf/test_spchain/ex_sharding/deps/src/mysqlclient/CMakeFiles/CheckTypeSize/SIZEOF_SOCKLEN_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(socklen_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

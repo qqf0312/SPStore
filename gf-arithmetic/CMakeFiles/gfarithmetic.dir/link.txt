@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgfarithmetic.a  CMakeFiles/gfarithmetic.dir/log_tables.cpp.o CMakeFiles/gfarithmetic.dir/lohi_table.cpp.o CMakeFiles/gfarithmetic.dir/matrix-inverse.cpp.o CMakeFiles/gfarithmetic.dir/matrix.cpp.o CMakeFiles/gfarithmetic.dir/symbol.cpp.o
+/usr/bin/ranlib libgfarithmetic.a

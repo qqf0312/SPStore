@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ex_sharding/evmc/lib/instructions/instruction_metrics.c
+evmc/instructions.h
+-
+
+/home/ubuntu/ex_sharding/evmc/lib/instructions/instruction_names.c
+evmc/instructions.h
+-
+
+evmc/include/evmc/evmc.h
+stddef.h
+-
+stdint.h
+-
+
+evmc/include/evmc/instructions.h
+evmc/evmc.h
+-
+evmc/utils.h
+-
+
+evmc/include/evmc/utils.h
+

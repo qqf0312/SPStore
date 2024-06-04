@@ -1,0 +1,13 @@
+# Target labels
+ gperftools
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/gperftools
+/home/ubuntu/ex_sharding/CMakeFiles/gperftools.rule
+/home/ubuntu/ex_sharding/CMakeFiles/gperftools-complete.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-install.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-download.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-update.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-patch.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-configure.rule
+/home/ubuntu/ex_sharding/deps/src/gperftools-stamp/gperftools-build.rule

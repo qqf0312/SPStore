@@ -1,0 +1,9 @@
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/install/strip.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/install.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/ecmult_static_context.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/install/local.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/gen_context.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/secp256k1.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/list_install_components.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/edit_cache.dir
+/home/ubuntu/ex_sharding/deps/src/secp256k1-build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liberasure.a  CMakeFiles/erasure.dir/encoder_dispatcher.cpp.o CMakeFiles/erasure.dir/liberasure.cpp.o CMakeFiles/erasure.dir/matrix.cpp.o CMakeFiles/erasure.dir/rs_encoder.cpp.o CMakeFiles/erasure.dir/stream_encode.cpp.o CMakeFiles/erasure.dir/stream_recover.cpp.o CMakeFiles/erasure.dir/symbol.cpp.o
+/usr/bin/ranlib liberasure.a

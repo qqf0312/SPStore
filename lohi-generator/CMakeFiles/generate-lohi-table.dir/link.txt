@@ -1,0 +1,1 @@
+/usr/bin/c++   -no-pie -std=c++14  -O0 -Wall -g2 -ggdb -Wtype-limits -Wsign-compare -Wno-dev -pthread -g   CMakeFiles/generate-lohi-table.dir/main.cpp.o CMakeFiles/generate-lohi-table.dir/symbol.cpp.o CMakeFiles/generate-lohi-table.dir/__/gf-arithmetic/log_tables.cpp.o  -o generate-lohi-table 

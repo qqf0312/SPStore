@@ -1,0 +1,13 @@
+# Target labels
+ leveldb
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/leveldb
+/home/ubuntu/ex_sharding/CMakeFiles/leveldb.rule
+/home/ubuntu/ex_sharding/CMakeFiles/leveldb-complete.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-install.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-download.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-update.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-patch.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-configure.rule
+/home/ubuntu/ex_sharding/deps/src/leveldb-stamp/leveldb-build.rule

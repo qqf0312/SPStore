@@ -1,0 +1,13 @@
+# Target labels
+ boost
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/boost
+/home/ubuntu/ex_sharding/CMakeFiles/boost.rule
+/home/ubuntu/ex_sharding/CMakeFiles/boost-complete.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-install.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-download.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-update.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-patch.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-configure.rule
+/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-build.rule

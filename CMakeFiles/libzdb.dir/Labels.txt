@@ -1,0 +1,13 @@
+# Target labels
+ libzdb
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/libzdb
+/home/ubuntu/ex_sharding/CMakeFiles/libzdb.rule
+/home/ubuntu/ex_sharding/CMakeFiles/libzdb-complete.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-install.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-download.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-update.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-patch.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-configure.rule
+/home/ubuntu/ex_sharding/deps/src/libzdb-stamp/libzdb-build.rule

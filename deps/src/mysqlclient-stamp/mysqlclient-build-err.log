@@ -1,0 +1,221 @@
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c: In function ‘my_uni_utf8_no_range’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5450:65: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3: r[2]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0x800;
+                                                              ~~~^~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5451:5: note: here
+     case 2: r[1]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0xc0;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5451:65: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2: r[1]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0xc0;
+                                                              ~~~^~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5452:5: note: here
+     case 1: r[0]= (uchar) wc;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c: In function ‘my_uni_utf8’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5421:67: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3: r[2] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0x800;
+                                                                ~~~^~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5422:5: note: here
+     case 2: r[1] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0xc0;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5422:67: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2: r[1] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0xc0;
+                                                                ~~~^~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:5423:5: note: here
+     case 1: r[0] = (uchar) wc;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c: In function ‘my_wc_mb_utf8mb4_no_range’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8004:65: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 4: r[3]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0x10000;
+                                                              ~~~^~~~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8005:5: note: here
+     case 3: r[2]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0x800;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8005:65: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3: r[2]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0x800;
+                                                              ~~~^~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8006:5: note: here
+     case 2: r[1]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0xc0;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8006:65: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2: r[1]= (uchar) (0x80 | (wc & 0x3f)); wc= wc >> 6; wc |= 0xc0;
+                                                              ~~~^~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:8007:5: note: here
+     case 1: r[0]= (uchar) wc;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c: In function ‘my_wc_mb_utf8mb4’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7972:67: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 4: r[3] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0x10000;
+                                                                ~~~^~~~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7973:5: note: here
+     case 3: r[2] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0x800;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7973:67: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3: r[2] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0x800;
+                                                                ~~~^~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7974:5: note: here
+     case 2: r[1] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0xc0;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7974:67: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2: r[1] = (uchar) (0x80 | (wc & 0x3f)); wc = wc >> 6; wc |= 0xc0;
+                                                                ~~~^~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/ctype-utf8.c:7975:5: note: here
+     case 1: r[0] = (uchar) wc;
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c: In function ‘count_trailing_zeroes’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:261:38: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 0: if ((val % 1) != 0) break; ++ret;
+                                      ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:262:3: note: here
+   case 1: if ((val % 10) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:262:39: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 1: if ((val % 10) != 0) break; ++ret;
+                                       ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:263:3: note: here
+   case 2: if ((val % 100) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:263:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 2: if ((val % 100) != 0) break; ++ret;
+                                        ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:264:3: note: here
+   case 3: if ((val % 1000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:264:41: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 3: if ((val % 1000) != 0) break; ++ret;
+                                         ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:265:3: note: here
+   case 4: if ((val % 10000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:265:42: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 4: if ((val % 10000) != 0) break; ++ret;
+                                          ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:266:3: note: here
+   case 5: if ((val % 100000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:266:43: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 5: if ((val % 100000) != 0) break; ++ret;
+                                           ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:267:3: note: here
+   case 6: if ((val % 1000000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:267:44: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 6: if ((val % 1000000) != 0) break; ++ret;
+                                            ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:268:3: note: here
+   case 7: if ((val % 10000000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:268:45: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 7: if ((val % 10000000) != 0) break; ++ret;
+                                             ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:269:3: note: here
+   case 8: if ((val % 100000000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:269:46: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 8: if ((val % 100000000) != 0) break; ++ret;
+                                              ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:270:3: note: here
+   case 9: if ((val % 1000000000) != 0) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c: In function ‘count_leading_zeroes’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:228:41: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 9: if (val >= 1000000000) break; ++ret;
+                                         ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:229:3: note: here
+   case 8: if (val >= 100000000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:229:40: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 8: if (val >= 100000000) break; ++ret;
+                                        ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:230:3: note: here
+   case 7: if (val >= 10000000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:230:39: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 7: if (val >= 10000000) break; ++ret;
+                                       ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:231:3: note: here
+   case 6: if (val >= 1000000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:231:38: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 6: if (val >= 1000000) break; ++ret;
+                                      ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:232:3: note: here
+   case 5: if (val >= 100000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:232:37: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 5: if (val >= 100000) break; ++ret;
+                                     ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:233:3: note: here
+   case 4: if (val >= 10000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:233:36: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 4: if (val >= 10000) break; ++ret;
+                                    ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:234:3: note: here
+   case 3: if (val >= 1000) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:234:35: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 3: if (val >= 1000) break; ++ret;
+                                   ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:235:3: note: here
+   case 2: if (val >= 100) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:235:34: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 2: if (val >= 100) break; ++ret;
+                                  ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:236:3: note: here
+   case 1: if (val >= 10) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:236:33: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   case 1: if (val >= 10) break; ++ret;
+                                 ^~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/decimal.c:237:3: note: here
+   case 0: if (val >= 1) break; ++ret;
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c: In function ‘dtoa’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:2324:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     leftright= 0;
+     ~~~~~~~~~^~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:2326:3: note: here
+   case 4:
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:2332:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     leftright= 0;
+     ~~~~~~~~~^~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:2334:3: note: here
+   case 5:
+   ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c: In function ‘my_strtod_int’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:1380:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       sign= 1;
+       ~~~~^~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:1382:5: note: here
+     case '+':
+     ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:1477:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+         esign= 1;
+         ~~~~~^~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/strings/dtoa.c:1478:7: note: here
+       case '+':
+       ^~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/mysys/my_lib.c: In function ‘my_dir’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/mysys/my_lib.c:127:3: warning: ‘readdir_r’ is deprecated [-Wdeprecated-declarations]
+   while (!(READDIR(dirp,(struct dirent*) dirent_tmp,dp)))
+   ^~~~~
+In file included from /usr/include/features.h:424:0,
+                 from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdio.h:27,
+                 from /home/ubuntu/ex_sharding/deps/src/mysqlclient/include/my_global.h:41,
+                 from /home/ubuntu/ex_sharding/deps/src/mysqlclient/mysys/mysys_priv.h:19,
+                 from /home/ubuntu/ex_sharding/deps/src/mysqlclient/mysys/my_lib.c:19:
+/usr/include/dirent.h:189:12: note: declared here
+ extern int __REDIRECT (readdir_r,
+            ^
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/sql-common/client.c: In function ‘mysql_read_default_options’:
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/sql-common/client.c:1841:29: warning: this statement may fall through [-Wimplicit-fallthrough=]
+           options->protocol = MYSQL_PROTOCOL_PIPE;
+           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/home/ubuntu/ex_sharding/deps/src/mysqlclient/sql-common/client.c:1842:2: note: here
+  case OPT_connect_timeout:
+  ^~~~
+/usr/bin/ar: creating /home/ubuntu/ex_sharding/deps/src/mysqlclient/libmysql/libmysqlclient.a

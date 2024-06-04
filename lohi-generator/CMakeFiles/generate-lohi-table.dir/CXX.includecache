@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ex_sharding/gf-arithmetic/log_tables.cpp
+cstdint
+-
+
+/home/ubuntu/ex_sharding/lohi-generator/main.cpp
+symbol.h
+/home/ubuntu/ex_sharding/lohi-generator/symbol.h
+iostream
+-
+fstream
+-
+
+/home/ubuntu/ex_sharding/lohi-generator/symbol.cpp
+symbol.h
+/home/ubuntu/ex_sharding/lohi-generator/symbol.h
+cassert
+-
+
+/home/ubuntu/ex_sharding/lohi-generator/symbol.h
+cstdint
+-
+

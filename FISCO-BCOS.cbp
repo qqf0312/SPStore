@@ -1,0 +1,2773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FISCO-BCOS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\;CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\;CMake Files\cmake\;CMake Files\cmake\templates\;CMake Files\deps\;CMake Files\deps\tmp\;CMake Files\libchannelserver\;CMake Files\libdevcore\;CMake Files\libdevcrypto\;CMake Files\libethcore\;CMake Files\evmc\;CMake Files\evmc\cmake\;CMake Files\evmc\cmake\cable\;CMake Files\evmc\cmake\cable\defaults\;CMake Files\evmc\lib\;CMake Files\evmc\lib\instructions\;CMake Files\evmc\lib\loader\;CMake Files\libinterpreter\;CMake Files\libevm\;CMake Files\libtxpool\;CMake Files\libstorage\;CMake Files\libprecompiled\;CMake Files\libprecompiled\extension\;CMake Files\libnetwork\;CMake Files\libp2p\;CMake Files\libexecutive\;CMake Files\libmptstate\;CMake Files\libblockverifier\;CMake Files\libstoragestate\;CMake Files\libblockchain\;CMake Files\libsync\;CMake Files\libconsensus\;CMake Files\libledger\;CMake Files\librpc\;CMake Files\libinitializer\;CMake Files\libsecurity\;CMake Files\libeventfilter\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="boost">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 boost"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tbb">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 tbb"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jsonrpccpp">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 jsonrpccpp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mhd">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 mhd"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="snappy">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 snappy"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="secp256k1">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 secp256k1"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cryptopp">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 cryptopp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jsoncpp">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 jsoncpp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rocksdb">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 rocksdb"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mini-p2p">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/bin/mini-p2p" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCARES_STATICLIB"/>
+					<Add option="-D__CLANG_SUPPORT_DYN_ANNOTATION__"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 mini-p2p"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mini-p2p/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/bin/mini-p2p" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCARES_STATICLIB"/>
+					<Add option="-D__CLANG_SUPPORT_DYN_ANNOTATION__"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 mini-p2p/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="leveldb">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 leveldb"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mysqlclient">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 mysqlclient"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libzdb">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 libzdb"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gperftools">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 gperftools"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BuildInfo.h">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 BuildInfo.h"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="channelserver">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/libchannelserver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 channelserver"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="channelserver/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/libchannelserver.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 channelserver/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devcore">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/libdevcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 devcore"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devcore/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/libdevcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 devcore/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devcrypto">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/libdevcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 devcrypto"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="devcrypto/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/libdevcrypto.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 devcrypto/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ethcore">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/libethcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 ethcore"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ethcore/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/libethcore.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 ethcore/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="instructions">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/libevmc-instructions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 instructions"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="instructions/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/libevmc-instructions.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 instructions/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="loader">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/libevmc-loader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 loader"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="loader/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/libevmc-loader.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 loader/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="interpreter">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/libinterpreter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 interpreter"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="interpreter/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/libinterpreter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 interpreter/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evm">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/libevm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 evm"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="evm/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/libevm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 evm/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="txpool">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/libtxpool.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 txpool"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="txpool/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/libtxpool.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 txpool/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="storage">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/libstorage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 storage"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="storage/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/libstorage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 storage/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="precompiled">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/libprecompiled.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 precompiled"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="precompiled/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/libprecompiled.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 precompiled/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="network">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/libnetwork.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 network"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="network/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/libnetwork.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 network/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p2p">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/libp2p.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 p2p"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p2p/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/libp2p.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 p2p/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="executivecontext">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/libexecutivecontext.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 executivecontext"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="executivecontext/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/libexecutivecontext.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 executivecontext/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mptstate">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/libmptstate.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmptstate"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 mptstate"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mpt_state/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/libmptstate.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmptstate"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 mpt_state/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blockverifier">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/libblockverifier.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 blockverifier"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blockverifier/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/libblockverifier.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 blockverifier/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="storagestate">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/libstoragestate.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstoragestate"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 storagestate"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="storage_state/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/libstoragestate.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstoragestate"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 storage_state/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blockchain">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/libblockchain.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 blockchain"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="blockchain/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/libblockchain.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 blockchain/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sync">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/libsync.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 sync"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sync/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/libsync.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 sync/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="consensus">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/libconsensus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./pbft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./raft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./rotating_pbft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 consensus"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="consensus/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/libconsensus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./pbft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./raft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/./rotating_pbft"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 consensus/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ledger">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/libledger.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 ledger"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ledger/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/libledger.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 ledger/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpc">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/librpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 rpc"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpc/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/librpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/.."/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 rpc/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="initializer">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/libinitializer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 initializer"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="initializer/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/libinitializer.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/gperftools/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/mhd/src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 initializer/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="security">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/libsecurity.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 security"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="security/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/libsecurity.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/rocksdb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/libzdb/zdb"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 security/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eventfilter">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/libeventfilter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 eventfilter"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eventfilter/fast">
+				<Option output="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/libeventfilter.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/boost"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/leveldb/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/include"/>
+					<Add directory="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/src/tbb/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 eventfilter/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/InterNode.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/InterNode.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include/evmc/instructions.h">
+			<Option target="instructions"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/include/evmc/loader.h">
+			<Option target="loader"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/instruction_metrics.c">
+			<Option target="instructions"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/instruction_names.c">
+			<Option target="instructions"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/loader.c">
+			<Option target="loader"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/hash.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/hash.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/iterator.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/iterator.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/lib.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/lib.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/BlockChainImp.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/BlockChainImp.h">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/BlockChainInterface.h">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/BlockVerifier.cpp">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/BlockVerifier.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/BlockVerifierInterface.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/Common.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/DAG.cpp">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/DAG.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/ExecutiveContext.cpp">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/ExecutiveContext.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/ExecutiveContextFactory.cpp">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/ExecutiveContextFactory.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/TxDAG.cpp">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/TxDAG.h">
+			<Option target="blockverifier"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelException.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelMessage.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelRPCServer.cpp">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelRPCServer.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelServer.cpp">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelServer.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelSession.cpp">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/ChannelSession.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/Message.h">
+			<Option target="channelserver"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Common.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/ConsensusEngineBase.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/ConsensusEngineBase.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/ConsensusInterface.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Sealer.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/Sealer.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTEngine.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTEngine.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTReqCache.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTReqCache.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTSealer.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PBFTSealer.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PartiallyPBFTReqCache.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/pbft/PartiallyPBFTReqCache.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/raft/RaftEngine.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/raft/RaftEngine.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/raft/RaftSealer.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/raft/RaftSealer.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/rotating_pbft/RPBFTReqCache.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/rotating_pbft/RPBFTReqCache.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/rotating_pbft/RotatingPBFTEngine.cpp">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/rotating_pbft/RotatingPBFTEngine.h">
+			<Option target="consensus"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Address.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Address.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Assertions.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Base64.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Base64.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/BasicLevelDB.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/BasicLevelDB.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Common.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Common.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonData.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonData.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonIO.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonIO.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonJS.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CommonJS.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Exceptions.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/FileSignal.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/FileSystem.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/FileSystem.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/FixedHash.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/FixedHash.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Guards.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/LevelDB.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/LevelDB.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Log.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Log.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/MemoryDB.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/MemoryDB.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/OverlayDB.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/OverlayDB.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/RLP.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/RLP.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/SnappyCompress.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/SnappyCompress.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/ThreadPool.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TopicInfo.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TreeTopology.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TreeTopology.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieCommon.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieCommon.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieDB.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieHash.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieHash.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieHash2.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/TrieHash2.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/UndefMacros.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Worker.cpp">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/Worker.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/concurrent_queue.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/db.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/dbfwd.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/secure_vector.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/vector_ref.h">
+			<Option target="devcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/AES.cpp">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/AES.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Common.cpp">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Common.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Exceptions.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Hash.cpp">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/Hash.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/gm/sm2/sm2.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/gm/sm3/sm3.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/gm/sm4/sm4.h">
+			<Option target="devcrypto"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ABI.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ABI.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ABIParser.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ABIParser.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Block.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Block.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/BlockFactory.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/BlockHeader.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/BlockHeader.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ChainOperationParams.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/ChainOperationParams.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Common.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Common.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/CommonJS.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/EVMSchedule.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Exceptions.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Instruction.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Instruction.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/LastBlockHashesFace.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/LogEntry.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/LogEntry.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/PartiallyBlock.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/PartiallyBlock.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Precompiled.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Precompiled.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/PrecompiledContract.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/PrecompiledContract.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Protocol.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Transaction.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/Transaction.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/TransactionReceipt.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/TransactionReceipt.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/TxsParallelParser.cpp">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/TxsParallelParser.h">
+			<Option target="ethcore"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/Common.h">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilter.cpp">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilter.h">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilterManager.cpp">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilterManager.h">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilterParams.cpp">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/EventLogFilterParams.h">
+			<Option target="eventfilter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/EVMC.cpp">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/EVMC.h">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/ExtVMFace.cpp">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/ExtVMFace.h">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/VMFace.h">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/VMFactory.cpp">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/VMFactory.h">
+			<Option target="evm"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/ExecutionResult.cpp">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/ExecutionResult.h">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Executive.cpp">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/Executive.h">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/ExtVM.cpp">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/ExtVM.h">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/StateFace.h">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/StateFactoryInterface.h">
+			<Option target="executivecontext"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/BoostLogInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/BoostLogInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Common.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/GlobalConfigureInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/GlobalConfigureInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Initializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/Initializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/InitializerInterface.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/LedgerInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/LedgerInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/P2PInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/P2PInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/RPCInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/RPCInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/SecureInitializer.cpp">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/SecureInitializer.h">
+			<Option target="initializer"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/VM.cpp">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/VM.h">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/VMCalls.cpp">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/VMConfig.h">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/VMOpt.cpp">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/interpreter.h">
+			<Option target="interpreter"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/DBInitializer.cpp">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/DBInitializer.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Ledger.cpp">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/Ledger.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerInterface.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerManager.cpp">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerManager.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerParam.cpp">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerParam.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/LedgerParamInterface.h">
+			<Option target="ledger"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Account.cpp">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Account.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/CodeSizeCache.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Defaults.cpp">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/Defaults.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/MPTState.cpp">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/MPTState.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/MPTStateFactory.cpp">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/MPTStateFactory.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/State.cpp">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/State.h">
+			<Option target="mptstate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/ASIOInterface.cpp">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/ASIOInterface.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Common.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Host.cpp">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Host.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/PeerWhitelist.cpp">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/PeerWhitelist.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Session.cpp">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Session.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/SessionFace.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/Socket.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/SocketFace.h">
+			<Option target="network"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Common.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PInterface.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PMessage.cpp">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PMessage.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PMessageFactory.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PMessageRC2.cpp">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PMessageRC2.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PSession.cpp">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/P2PSession.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Service.cpp">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/Service.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/StatisticHandler.cpp">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/StatisticHandler.h">
+			<Option target="p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/CNSPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/CNSPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/CRUDPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/CRUDPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Common.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Common.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ConditionPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ConditionPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ConsensusPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ConsensusPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ContractLifeCyclePrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ContractLifeCyclePrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/EntriesPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/EntriesPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/EntryPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/EntryPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/KVTableFactoryPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/KVTableFactoryPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/KVTablePrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/KVTablePrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ParallelConfigPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/ParallelConfigPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/PermissionPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/PermissionPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Precompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/Precompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/SystemConfigPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/SystemConfigPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/TableFactoryPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/TableFactoryPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/TablePrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/TablePrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/extension/DagTransferPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/extension/DagTransferPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/extension/HelloWorldPrecompiled.cpp">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/extension/HelloWorldPrecompiled.h">
+			<Option target="precompiled"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Common.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/HTTPMessage.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/JsonHelper.cpp">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/JsonHelper.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/ModularServer.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Rpc.cpp">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/Rpc.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/RpcFace.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/SafeHttpServer.cpp">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/SafeHttpServer.h">
+			<Option target="rpc"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/Common.h">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/EncryptedFile.cpp">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/EncryptedFile.h">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/EncryptedLevelDB.cpp">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/EncryptedLevelDB.h">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/KeyCenter.cpp">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/KeyCenter.h">
+			<Option target="security"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BasicRocksDB.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BasicRocksDB.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BinLogHandler.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BinLogHandler.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BinaryLogStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/BinaryLogStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/CachedStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/CachedStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Common.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Common.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/LevelDBStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/LevelDBStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTable.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTable2.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTable2.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactory.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactory.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactory2.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactory2.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactoryFactory.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/MemoryTableFactoryFactory2.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/RocksDBStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/RocksDBStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/RocksDBStorageFactory.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/RocksDBStorageFactory.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLBasicAccess.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLBasicAccess.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLConnectionPool.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLConnectionPool.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/SQLStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/ScalableStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/ScalableStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Storage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/StorageException.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Table.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/Table.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/ZdbStorage.cpp">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/ZdbStorage.h">
+			<Option target="storage"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/StorageState.cpp">
+			<Option target="storagestate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/StorageState.h">
+			<Option target="storagestate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/StorageStateFactory.cpp">
+			<Option target="storagestate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/StorageStateFactory.h">
+			<Option target="storagestate"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/Common.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/DownloadingBlockQueue.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/DownloadingBlockQueue.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/DownloadingTxsQueue.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/DownloadingTxsQueue.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/GossipBlockStatus.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/GossipBlockStatus.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/RspBlockReq.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/RspBlockReq.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncInterface.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMaster.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMaster.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMsgEngine.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMsgEngine.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMsgPacket.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncMsgPacket.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncStatus.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncStatus.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncTransaction.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncTransaction.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncTreeTopology.cpp">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/SyncTreeTopology.h">
+			<Option target="sync"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/CommonTransactionNonceCheck.cpp">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/CommonTransactionNonceCheck.h">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/TransactionNonceCheck.cpp">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/TransactionNonceCheck.h">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/TxPool.cpp">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/TxPool.h">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/TxPoolInterface.h">
+			<Option target="txpool"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/nibble_path.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/nibble_path.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/node.pb.cc">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/node_type.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/node_type.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/p2p_main.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/sha256.cpp">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/sha256.h">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/shard.grpc.pb.cc">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/shard.pb.cc">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/shard.pb.cc.rule">
+			<Option target="mini-p2p"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-options.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/protobuf/protobuf-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/grpc/gRPCConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/grpc/gRPCTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/../../../../usr/local/lib/cmake/grpc/gRPCTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/EthBuildInfo.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/EthCompilerSettings.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/EthDependencies.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/EthOptions.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectBoost.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectCryptopp.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectJsonCpp.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectJsonRpcCpp.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectLevelDB.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectLibzdb.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectMHD.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectRocksDB.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectSecp256k1.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectSnappy.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectTASSL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectTBB.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/ProjectTCMalloc.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/UseOpenSSL.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/cmake/templates/UserPrecompiled.h.in">
+			<Option virtualFolder="CMake Files\cmake\templates\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/boost-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/cryptopp-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/gperftools-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/jsoncpp-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/jsonrpccpp-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/leveldb-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/libzdb-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/mhd-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/mysqlclient-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/rocksdb-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/secp256k1-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/snappy-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/deps/tmp/tbb-cfgcmd.txt.in">
+			<Option virtualFolder="CMake Files\deps\tmp\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libchannelserver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libchannelserver\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libdevcore\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libdevcrypto/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libdevcrypto\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libethcore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libethcore\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\evmc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\evmc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/HunterConfig.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/cable/CableBuildType.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\cable\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/cable/CableCompilerSettings.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\cable\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/cable/HunterGate.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\cable\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/cable/bootstrap.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\cable\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/cmake/cable/defaults/HunterCacheServers.cmake">
+			<Option virtualFolder="CMake Files\evmc\cmake\cable\defaults\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\evmc\lib\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/instructions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\evmc\lib\instructions\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/evmc/lib/loader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\evmc\lib\loader\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinterpreter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libinterpreter\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libevm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libevm\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libtxpool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libtxpool\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libstorage\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libprecompiled\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libprecompiled/extension/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libprecompiled\extension\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libnetwork/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libnetwork\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libp2p/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libp2p\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libexecutive/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libexecutive\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libmpt_state/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libmptstate\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockverifier/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libblockverifier\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libstorage_state/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libstoragestate\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libblockchain/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libblockchain\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsync/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libsync\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libconsensus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libconsensus\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libledger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libledger\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/librpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\librpc\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libinitializer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libinitializer\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libsecurity/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libsecurity\"/>
+		</Unit>
+		<Unit filename="/home/ubuntu/tmp_ex_sharding/ex_sharding/libeventfilter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libeventfilter\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/boost"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/boost.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/boost-complete.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-install.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-mkdir.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-download.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-update.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-patch.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-configure.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/boost-stamp/boost-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boost"
+		],
+		"name" : "boost"
+	}
+}

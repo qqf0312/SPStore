@@ -1,0 +1,30 @@
+-- Running cmake version 3.10.2
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- SIZEOF_VOIDP 8
+-- LibMySQL 6.1.11
+-- Built from MySQL 5.7.16 sources
+-- Packaging as: mysql-connector-c-6.1.11-Linux-x86_64
+-- Installing to: /home/ubuntu/ex_sharding/deps
+-- Library mysqlclient depends on OSLIBS -lpthread;m;rt;dl
+-- CMAKE_BUILD_TYPE: RelWithDebInfo
+-- COMPILE_DEFINITIONS: _GNU_SOURCE;_FILE_OFFSET_BITS=64;HAVE_CONFIG_H
+-- CMAKE_C_FLAGS:  -Wall -Wextra -Wformat-security -Wvla -Wwrite-strings -Wdeclaration-after-statement -Wno-unused-parameter
+-- CMAKE_CXX_FLAGS:  -Wall -Wextra -Wformat-security -Wvla -Woverloaded-virtual -Wno-unused-parameter
+-- CMAKE_C_FLAGS_RELWITHDEBINFO: -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -DDBUG_OFF
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O3 -g -fabi-version=2 -fno-omit-frame-pointer -fno-strict-aliasing -std=gnu++03 -DDBUG_OFF
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/ex_sharding/deps/src/mysqlclient

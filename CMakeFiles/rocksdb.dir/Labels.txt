@@ -1,0 +1,13 @@
+# Target labels
+ rocksdb
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/rocksdb
+/home/ubuntu/ex_sharding/CMakeFiles/rocksdb.rule
+/home/ubuntu/ex_sharding/CMakeFiles/rocksdb-complete.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-install.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-download.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-update.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-patch.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-configure.rule
+/home/ubuntu/ex_sharding/deps/src/rocksdb-stamp/rocksdb-build.rule

@@ -1,0 +1,103 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0bfa3/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0bfa3.dir/build.make CMakeFiles/cmTC_0bfa3.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0bfa3.dir/TestEndianess.c.o
+/usr/bin/cc    -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden  -fPIE   -o CMakeFiles/cmTC_0bfa3.dir/TestEndianess.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp/TestEndianess.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_0bfa3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bfa3.dir/link.txt --verbose=1
+/usr/bin/cc  -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden     CMakeFiles/cmTC_0bfa3.dir/TestEndianess.c.o  -o cmTC_0bfa3 -rdynamic 
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45a05/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_45a05.dir/build.make CMakeFiles/cmTC_45a05.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45a05.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden  -fPIE   -o CMakeFiles/cmTC_45a05.dir/CheckSymbolExists.c.o   -c /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_45a05
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45a05.dir/link.txt --verbose=1
+/usr/bin/cc  -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden     CMakeFiles/cmTC_45a05.dir/CheckSymbolExists.c.o  -o cmTC_45a05 -rdynamic 
+CMakeFiles/cmTC_45a05.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_45a05.dir/build.make:97: recipe for target 'cmTC_45a05' failed
+make[4]: *** [cmTC_45a05] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45a05/fast' failed
+make[3]: *** [cmTC_45a05/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+
+File /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5e7f8/fast"
+make[3]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_5e7f8.dir/build.make CMakeFiles/cmTC_5e7f8.dir/build
+make[4]: Entering directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e7f8.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_5e7f8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-fvisibility-inlines-hidden’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_5e7f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e7f8.dir/link.txt --verbose=1
+/usr/bin/cc  -march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_5e7f8.dir/CheckFunctionExists.c.o  -o cmTC_5e7f8 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5e7f8.dir/build.make:97: recipe for target 'cmTC_5e7f8' failed
+make[4]: *** [cmTC_5e7f8] Error 1
+make[4]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5e7f8/fast' failed
+make[3]: *** [cmTC_5e7f8/fast] Error 2
+make[3]: Leaving directory '/home/qqf/test_spchain/ex_sharding/deps/src/cryptopp-build/CMakeFiles/CMakeTmp'
+
+

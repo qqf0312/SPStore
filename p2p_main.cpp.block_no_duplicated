@@ -1,0 +1,59 @@
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <string>
+#include <vector>
+#include <set>
+using namespace std;
+std::pair<string, int> SplitString(const string& s, const string& c)
+{
+    string::size_type pos1, pos2;
+    pos2 = s.find(c);
+    pos1 = 0;
+    int rw = 0;
+    if (s.substr(pos1, pos2 - pos1) == "W")
+    {
+        rw = 1;
+    }
+
+    pos1 = pos2 + c.size();
+    return make_pair(s.substr(pos1), rw);
+}
+
+int main()
+{
+    ifstream in("block_key.txt");
+    ofstream out("block_key_no_duplicated.txt");
+    string filename;
+    string line;
+    std::set<std::string> v;
+    map<string, int> m;
+    if (in)  // 有该文件
+    {
+        while (getline(in, line))  // line中不包括每行的换行符
+        {
+            if (line != "******************")
+            {
+                v.insert(line);
+            }
+            else
+            {
+                for(auto it = v.begin();it != v.end();++it)
+                {
+                    out << *it << std::endl;
+                }
+                out<<"******************"<<std::endl;
+                v.clear();
+            }
+            
+            // cout << line << endl;
+            // out << line << endl; // 输入到2.txt中
+        }
+    }
+    else  // 没有该文件
+    {
+        std::cout << "no such file" << std::endl;
+    }
+
+    return 0;
+}

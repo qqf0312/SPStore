@@ -1,0 +1,1 @@
+/usr/bin/c++   -no-pie -std=c++14  -O0 -Wall -g2 -ggdb -Wtype-limits -Wsign-compare -Wno-dev -pthread -g   CMakeFiles/generate-log-tables.dir/main.cpp.o  -o generate-log-tables 

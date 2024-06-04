@@ -1,0 +1,17 @@
+Scanning dependencies of target gen_context
+[ 25%] Building C object CMakeFiles/gen_context.dir/src/gen_context.c.o
+[ 50%] Linking C executable gen_context
+[ 50%] Built target gen_context
+[ 50%] Built target ecmult_static_context
+Scanning dependencies of target secp256k1
+[ 75%] Building C object CMakeFiles/secp256k1.dir/src/secp256k1.c.o
+[100%] Linking C static library libsecp256k1.a
+[100%] Built target secp256k1
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libsecp256k1.a
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/secp256k1_sha256.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/secp256k1_ecdh.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/secp256k1_recovery.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/secp256k1.h

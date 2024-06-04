@@ -1,0 +1,285 @@
+Scanning dependencies of target INFO_SRC
+Scanning dependencies of target abi_check
+[  0%] Built target INFO_SRC
+Scanning dependencies of target INFO_BIN
+[  0%] Built target abi_check
+[  0%] Built target INFO_BIN
+Scanning dependencies of target zlib
+[  1%] Building C object zlib/CMakeFiles/zlib.dir/adler32.c.o
+Scanning dependencies of target yassl
+[  2%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/buffer.cpp.o
+[  2%] Building C object zlib/CMakeFiles/zlib.dir/compress.c.o
+[  2%] Building C object zlib/CMakeFiles/zlib.dir/crc32.c.o
+[  2%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/cert_wrapper.cpp.o
+[  3%] Building C object zlib/CMakeFiles/zlib.dir/deflate.c.o
+[  4%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/crypto_wrapper.cpp.o
+[  4%] Building C object zlib/CMakeFiles/zlib.dir/gzio.c.o
+[  5%] Building C object zlib/CMakeFiles/zlib.dir/infback.c.o
+[  5%] Building C object zlib/CMakeFiles/zlib.dir/inffast.c.o
+[  5%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/handshake.cpp.o
+[  5%] Building C object zlib/CMakeFiles/zlib.dir/inflate.c.o
+[  5%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/lock.cpp.o
+[  6%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/log.cpp.o
+[  7%] Building C object zlib/CMakeFiles/zlib.dir/inftrees.c.o
+[  7%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/socket_wrapper.cpp.o
+[  8%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/ssl.cpp.o
+[  8%] Building C object zlib/CMakeFiles/zlib.dir/trees.c.o
+[  9%] Building C object zlib/CMakeFiles/zlib.dir/uncompr.c.o
+[  9%] Building C object zlib/CMakeFiles/zlib.dir/zutil.c.o
+[ 10%] Linking C static library libzlib.a
+[ 10%] Built target zlib
+Scanning dependencies of target taocrypt
+[ 10%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/aes.cpp.o
+[ 10%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/timer.cpp.o
+[ 11%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/yassl_error.cpp.o
+[ 11%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/yassl_imp.cpp.o
+[ 12%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/aestables.cpp.o
+[ 12%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/algebra.cpp.o
+[ 13%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/arc4.cpp.o
+[ 13%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/asn.cpp.o
+[ 13%] Building CXX object extra/yassl/CMakeFiles/yassl.dir/src/yassl_int.cpp.o
+[ 13%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/coding.cpp.o
+[ 14%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/des.cpp.o
+[ 14%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/dh.cpp.o
+[ 15%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/dsa.cpp.o
+[ 16%] Building C object extra/yassl/CMakeFiles/yassl.dir/__/__/client/get_password.c.o
+[ 16%] Linking CXX static library libyassl.a
+[ 16%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/file.cpp.o
+[ 16%] Built target yassl
+[ 16%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/hash.cpp.o
+Scanning dependencies of target strings
+[ 17%] Building C object strings/CMakeFiles/strings.dir/bchange.c.o
+[ 17%] Building C object strings/CMakeFiles/strings.dir/ctype-big5.c.o
+[ 18%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/integer.cpp.o
+[ 19%] Building C object strings/CMakeFiles/strings.dir/ctype-bin.c.o
+[ 19%] Building C object strings/CMakeFiles/strings.dir/ctype-cp932.c.o
+[ 19%] Building C object strings/CMakeFiles/strings.dir/ctype-czech.c.o
+[ 20%] Building C object strings/CMakeFiles/strings.dir/ctype-euc_kr.c.o
+[ 20%] Building C object strings/CMakeFiles/strings.dir/ctype-eucjpms.c.o
+[ 21%] Building C object strings/CMakeFiles/strings.dir/ctype-extra.c.o
+[ 21%] Building C object strings/CMakeFiles/strings.dir/ctype-gb2312.c.o
+[ 21%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/md2.cpp.o
+[ 21%] Building C object strings/CMakeFiles/strings.dir/ctype-gbk.c.o
+[ 22%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/md4.cpp.o
+[ 22%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/md5.cpp.o
+[ 23%] Building C object strings/CMakeFiles/strings.dir/ctype-gb18030.c.o
+[ 23%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/misc.cpp.o
+[ 24%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/random.cpp.o
+[ 24%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/ripemd.cpp.o
+[ 25%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/rsa.cpp.o
+[ 25%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/sha.cpp.o
+[ 25%] Building C object strings/CMakeFiles/strings.dir/ctype-latin1.c.o
+[ 26%] Building C object strings/CMakeFiles/strings.dir/ctype-mb.c.o
+[ 27%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/rabbit.cpp.o
+[ 27%] Building C object strings/CMakeFiles/strings.dir/ctype-simple.c.o
+[ 27%] Building CXX object extra/yassl/taocrypt/CMakeFiles/taocrypt.dir/src/hc128.cpp.o
+[ 27%] Linking CXX static library libtaocrypt.a
+[ 27%] Built target taocrypt
+Scanning dependencies of target vio
+[ 28%] Building C object vio/CMakeFiles/vio.dir/vio.c.o
+[ 29%] Building C object strings/CMakeFiles/strings.dir/ctype-sjis.c.o
+[ 29%] Building C object vio/CMakeFiles/vio.dir/viosocket.c.o
+[ 30%] Building C object vio/CMakeFiles/vio.dir/viossl.c.o
+[ 30%] Building C object strings/CMakeFiles/strings.dir/ctype-tis620.c.o
+[ 30%] Building C object vio/CMakeFiles/vio.dir/viosslfactories.c.o
+[ 30%] Building C object strings/CMakeFiles/strings.dir/ctype-uca.c.o
+[ 30%] Linking C static library libvio.a
+[ 30%] Built target vio
+Scanning dependencies of target regex
+[ 30%] Building C object regex/CMakeFiles/regex.dir/regcomp.c.o
+[ 31%] Building C object strings/CMakeFiles/strings.dir/ctype-ucs2.c.o
+[ 32%] Building C object regex/CMakeFiles/regex.dir/regerror.c.o
+[ 32%] Building C object regex/CMakeFiles/regex.dir/regexec.c.o
+[ 33%] Building C object regex/CMakeFiles/regex.dir/regfree.c.o
+[ 33%] Building C object strings/CMakeFiles/strings.dir/ctype-ujis.c.o
+[ 33%] Building C object regex/CMakeFiles/regex.dir/reginit.c.o
+[ 34%] Linking C static library libregex.a
+[ 34%] Built target regex
+[ 35%] Building C object strings/CMakeFiles/strings.dir/ctype-utf8.c.o
+[ 35%] Building C object strings/CMakeFiles/strings.dir/ctype-win1250ch.c.o
+[ 35%] Building C object strings/CMakeFiles/strings.dir/ctype.c.o
+[ 36%] Building C object strings/CMakeFiles/strings.dir/decimal.c.o
+[ 36%] Building C object strings/CMakeFiles/strings.dir/dtoa.c.o
+[ 37%] Building C object strings/CMakeFiles/strings.dir/int2str.c.o
+[ 37%] Building C object strings/CMakeFiles/strings.dir/is_prefix.c.o
+[ 37%] Building C object strings/CMakeFiles/strings.dir/llstr.c.o
+[ 38%] Building C object strings/CMakeFiles/strings.dir/longlong2str.c.o
+[ 38%] Building C object strings/CMakeFiles/strings.dir/my_strtoll10.c.o
+[ 39%] Building C object strings/CMakeFiles/strings.dir/my_vsnprintf.c.o
+[ 39%] Building C object strings/CMakeFiles/strings.dir/str2int.c.o
+[ 40%] Building C object strings/CMakeFiles/strings.dir/str_alloc.c.o
+[ 40%] Building C object strings/CMakeFiles/strings.dir/strcend.c.o
+[ 40%] Building C object strings/CMakeFiles/strings.dir/strend.c.o
+[ 41%] Building C object strings/CMakeFiles/strings.dir/strfill.c.o
+[ 41%] Building C object strings/CMakeFiles/strings.dir/strmake.c.o
+[ 42%] Building C object strings/CMakeFiles/strings.dir/my_stpmov.c.o
+[ 42%] Building C object strings/CMakeFiles/strings.dir/my_stpnmov.c.o
+[ 42%] Building C object strings/CMakeFiles/strings.dir/strxmov.c.o
+[ 43%] Building C object strings/CMakeFiles/strings.dir/strxnmov.c.o
+[ 43%] Building C object strings/CMakeFiles/strings.dir/xml.c.o
+[ 44%] Building C object strings/CMakeFiles/strings.dir/my_strchr.c.o
+[ 44%] Building C object strings/CMakeFiles/strings.dir/strcont.c.o
+[ 44%] Building C object strings/CMakeFiles/strings.dir/strappend.c.o
+[ 45%] Linking C static library libstrings.a
+[ 45%] Built target strings
+Scanning dependencies of target mysys
+[ 45%] Building C object mysys/CMakeFiles/mysys.dir/array.c.o
+[ 46%] Building C object mysys/CMakeFiles/mysys.dir/charset-def.c.o
+[ 46%] Building C object mysys/CMakeFiles/mysys.dir/charset.c.o
+[ 46%] Building C object mysys/CMakeFiles/mysys.dir/checksum.c.o
+[ 47%] Building C object mysys/CMakeFiles/mysys.dir/errors.c.o
+[ 47%] Building C object mysys/CMakeFiles/mysys.dir/hash.c.o
+[ 48%] Building C object mysys/CMakeFiles/mysys.dir/list.c.o
+[ 48%] Building C object mysys/CMakeFiles/mysys.dir/mf_cache.c.o
+[ 49%] Building C object mysys/CMakeFiles/mysys.dir/mf_dirname.c.o
+[ 49%] Building C object mysys/CMakeFiles/mysys.dir/mf_fn_ext.c.o
+[ 49%] Building C object mysys/CMakeFiles/mysys.dir/mf_format.c.o
+[ 50%] Building C object mysys/CMakeFiles/mysys.dir/mf_getdate.c.o
+[ 50%] Building C object mysys/CMakeFiles/mysys.dir/mf_iocache.c.o
+[ 51%] Building C object mysys/CMakeFiles/mysys.dir/mf_iocache2.c.o
+[ 51%] Building C object mysys/CMakeFiles/mysys.dir/mf_keycache.c.o
+[ 51%] Building C object mysys/CMakeFiles/mysys.dir/mf_keycaches.c.o
+[ 52%] Building C object mysys/CMakeFiles/mysys.dir/mf_loadpath.c.o
+[ 52%] Building C object mysys/CMakeFiles/mysys.dir/mf_pack.c.o
+[ 53%] Building C object mysys/CMakeFiles/mysys.dir/mf_path.c.o
+[ 53%] Building C object mysys/CMakeFiles/mysys.dir/mf_qsort.c.o
+[ 53%] Building C object mysys/CMakeFiles/mysys.dir/mf_qsort2.c.o
+[ 54%] Building C object mysys/CMakeFiles/mysys.dir/mf_radix.c.o
+[ 54%] Building C object mysys/CMakeFiles/mysys.dir/mf_same.c.o
+[ 55%] Building C object mysys/CMakeFiles/mysys.dir/mf_soundex.c.o
+[ 55%] Building C object mysys/CMakeFiles/mysys.dir/mf_arr_appstr.c.o
+[ 56%] Building C object mysys/CMakeFiles/mysys.dir/mf_tempfile.c.o
+[ 56%] Building C object mysys/CMakeFiles/mysys.dir/mf_unixpath.c.o
+[ 56%] Building C object mysys/CMakeFiles/mysys.dir/mf_wcomp.c.o
+[ 57%] Building C object mysys/CMakeFiles/mysys.dir/mulalloc.c.o
+[ 57%] Building C object mysys/CMakeFiles/mysys.dir/my_access.c.o
+[ 58%] Building C object mysys/CMakeFiles/mysys.dir/my_alloc.c.o
+[ 58%] Building C object mysys/CMakeFiles/mysys.dir/my_bit.c.o
+[ 58%] Building C object mysys/CMakeFiles/mysys.dir/my_bitmap.c.o
+[ 59%] Building C object mysys/CMakeFiles/mysys.dir/my_chsize.c.o
+[ 59%] Building C object mysys/CMakeFiles/mysys.dir/my_compress.c.o
+[ 60%] Building C object mysys/CMakeFiles/mysys.dir/my_copy.c.o
+[ 60%] Building C object mysys/CMakeFiles/mysys.dir/my_create.c.o
+[ 60%] Building C object mysys/CMakeFiles/mysys.dir/my_delete.c.o
+[ 61%] Building C object mysys/CMakeFiles/mysys.dir/my_div.c.o
+[ 61%] Building C object mysys/CMakeFiles/mysys.dir/my_error.c.o
+[ 62%] Building C object mysys/CMakeFiles/mysys.dir/my_file.c.o
+[ 62%] Building C object mysys/CMakeFiles/mysys.dir/my_fopen.c.o
+[ 63%] Building C object mysys/CMakeFiles/mysys.dir/my_fstream.c.o
+[ 63%] Building C object mysys/CMakeFiles/mysys.dir/my_getsystime.c.o
+[ 63%] Building C object mysys/CMakeFiles/mysys.dir/my_gethwaddr.c.o
+[ 64%] Building C object mysys/CMakeFiles/mysys.dir/my_getwd.c.o
+[ 64%] Building C object mysys/CMakeFiles/mysys.dir/my_compare.c.o
+[ 65%] Building C object mysys/CMakeFiles/mysys.dir/my_init.c.o
+[ 65%] Building C object mysys/CMakeFiles/mysys.dir/my_lib.c.o
+[ 65%] Building C object mysys/CMakeFiles/mysys.dir/my_lock.c.o
+[ 66%] Building C object mysys/CMakeFiles/mysys.dir/my_malloc.c.o
+[ 66%] Building C object mysys/CMakeFiles/mysys.dir/my_mess.c.o
+[ 67%] Building C object mysys/CMakeFiles/mysys.dir/my_mkdir.c.o
+[ 67%] Building C object mysys/CMakeFiles/mysys.dir/my_mmap.c.o
+[ 67%] Building C object mysys/CMakeFiles/mysys.dir/my_once.c.o
+[ 68%] Building C object mysys/CMakeFiles/mysys.dir/my_open.c.o
+[ 68%] Building C object mysys/CMakeFiles/mysys.dir/my_pread.c.o
+[ 69%] Building C object mysys/CMakeFiles/mysys.dir/my_read.c.o
+[ 69%] Building C object mysys/CMakeFiles/mysys.dir/my_redel.c.o
+[ 70%] Building C object mysys/CMakeFiles/mysys.dir/my_rename.c.o
+[ 70%] Building C object mysys/CMakeFiles/mysys.dir/my_static.c.o
+[ 70%] Building C object mysys/CMakeFiles/mysys.dir/my_seek.c.o
+[ 71%] Building C object mysys/CMakeFiles/mysys.dir/my_symlink.c.o
+[ 71%] Building C object mysys/CMakeFiles/mysys.dir/my_symlink2.c.o
+[ 72%] Building C object mysys/CMakeFiles/mysys.dir/my_sync.c.o
+[ 72%] Building C object mysys/CMakeFiles/mysys.dir/my_thr_init.c.o
+[ 72%] Building C object mysys/CMakeFiles/mysys.dir/my_write.c.o
+[ 73%] Building C object mysys/CMakeFiles/mysys.dir/ptr_cmp.c.o
+[ 73%] Building C object mysys/CMakeFiles/mysys.dir/queues.c.o
+[ 74%] Building C object mysys/CMakeFiles/mysys.dir/sql_chars.c.o
+[ 74%] Building C object mysys/CMakeFiles/mysys.dir/stacktrace.c.o
+[ 74%] Building C object mysys/CMakeFiles/mysys.dir/string.c.o
+[ 75%] Building C object mysys/CMakeFiles/mysys.dir/thr_cond.c.o
+[ 75%] Building C object mysys/CMakeFiles/mysys.dir/thr_lock.c.o
+[ 76%] Building C object mysys/CMakeFiles/mysys.dir/thr_mutex.c.o
+[ 76%] Building C object mysys/CMakeFiles/mysys.dir/thr_rwlock.c.o
+[ 77%] Building C object mysys/CMakeFiles/mysys.dir/tree.c.o
+[ 77%] Building C object mysys/CMakeFiles/mysys.dir/typelib.c.o
+[ 77%] Building C object mysys/CMakeFiles/mysys.dir/base64.c.o
+[ 78%] Building C object mysys/CMakeFiles/mysys.dir/my_memmem.c.o
+[ 78%] Building C object mysys/CMakeFiles/mysys.dir/lf_alloc-pin.c.o
+[ 79%] Building C object mysys/CMakeFiles/mysys.dir/lf_dynarray.c.o
+[ 79%] Building C object mysys/CMakeFiles/mysys.dir/lf_hash.c.o
+[ 79%] Building C object mysys/CMakeFiles/mysys.dir/my_rdtsc.c.o
+[ 80%] Building C object mysys/CMakeFiles/mysys.dir/psi_noop.c.o
+[ 80%] Building C object mysys/CMakeFiles/mysys.dir/my_syslog.c.o
+[ 81%] Building C object mysys/CMakeFiles/mysys.dir/my_chmod.c.o
+[ 81%] Building C object mysys/CMakeFiles/mysys.dir/my_thread.c.o
+[ 81%] Building C object mysys/CMakeFiles/mysys.dir/posix_timers.c.o
+[ 82%] Building C object mysys/CMakeFiles/mysys.dir/my_largepage.c.o
+[ 82%] Linking C static library libmysys.a
+[ 82%] Built target mysys
+Scanning dependencies of target dbug
+[ 83%] Building C object dbug/CMakeFiles/dbug.dir/dbug.c.o
+[ 83%] Linking C static library libdbug.a
+[ 83%] Built target dbug
+Scanning dependencies of target mysys_ssl
+[ 84%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/crypt_genhash_impl.cc.o
+[ 84%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/mf_tempdir.cc.o
+[ 85%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_default.cc.o
+[ 85%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_getopt.cc.o
+[ 85%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_aes.cc.o
+[ 86%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_sha1.cc.o
+[ 86%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_sha2.cc.o
+[ 87%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_md5.cc.o
+[ 87%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_rnd.cc.o
+[ 87%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_murmur3.cc.o
+[ 88%] Building CXX object mysys_ssl/CMakeFiles/mysys_ssl.dir/my_aes_yassl.cc.o
+[ 88%] Linking CXX static library libmysys_ssl.a
+[ 88%] Built target mysys_ssl
+Scanning dependencies of target comp_err
+Scanning dependencies of target my_print_defaults
+[ 88%] Building C object extra/CMakeFiles/comp_err.dir/comp_err.c.o
+[ 88%] Building C object extra/CMakeFiles/my_print_defaults.dir/my_print_defaults.c.o
+[ 89%] Linking CXX executable my_print_defaults
+[ 89%] Built target my_print_defaults
+Scanning dependencies of target resolveip
+[ 89%] Building C object extra/CMakeFiles/resolveip.dir/resolveip.c.o
+[ 90%] Linking CXX executable comp_err
+[ 90%] Linking CXX executable resolveip
+[ 90%] Built target comp_err
+Scanning dependencies of target GenError
+[ 90%] Generating ../include/mysqld_error.h, ../sql/share/english/errmsg.sys
+[ 90%] Built target resolveip
+[ 90%] Built target GenError
+Scanning dependencies of target perror
+[ 91%] Building C object extra/CMakeFiles/perror.dir/perror.c.o
+Scanning dependencies of target clientlib
+[ 91%] Building C object libmysql/CMakeFiles/clientlib.dir/get_password.c.o
+[ 92%] Building C object libmysql/CMakeFiles/clientlib.dir/libmysql.c.o
+[ 92%] Linking CXX executable perror
+[ 92%] Built target perror
+[ 92%] Building C object libmysql/CMakeFiles/clientlib.dir/errmsg.c.o
+[ 93%] Building C object libmysql/CMakeFiles/clientlib.dir/__/sql-common/client.c.o
+[ 93%] Building C object libmysql/CMakeFiles/clientlib.dir/__/sql-common/my_time.c.o
+[ 93%] Building C object libmysql/CMakeFiles/clientlib.dir/__/sql-common/client_plugin.c.o
+[ 94%] Building CXX object libmysql/CMakeFiles/clientlib.dir/__/sql-common/client_authentication.cc.o
+[ 94%] Building CXX object libmysql/CMakeFiles/clientlib.dir/__/sql/net_serv.cc.o
+[ 95%] Building C object libmysql/CMakeFiles/clientlib.dir/__/sql-common/pack.c.o
+[ 95%] Building C object libmysql/CMakeFiles/clientlib.dir/__/sql/auth/password.c.o
+[ 95%] Building C object libmysql/CMakeFiles/clientlib.dir/mysql_trace.c.o
+[ 96%] Linking CXX static library libclientlib.a
+[ 96%] Built target clientlib
+[ 96%] Generating mysqlclient_depends.c
+Scanning dependencies of target libmysql
+[ 97%] Building CXX object libmysql/CMakeFiles/libmysql.dir/libmysql_exports_file.cc.o
+Scanning dependencies of target mysqlclient
+[ 97%] Building C object libmysql/CMakeFiles/mysqlclient.dir/mysqlclient_depends.c.o
+[ 97%] Linking CXX shared library libmysqlclient.so
+[ 98%] Linking C static library libmysqlclient.a
+[ 98%] Built target mysqlclient
+[ 98%] Built target libmysql
+Scanning dependencies of target mysql_client_test
+Scanning dependencies of target libmysql_api_test
+[ 98%] Building C object testclients/CMakeFiles/mysql_client_test.dir/mysql_client_test.c.o
+[ 99%] Building C object libmysql/CMakeFiles/libmysql_api_test.dir/api_test.c.o
+[ 99%] Linking CXX executable libmysql_api_test
+[ 99%] Built target libmysql_api_test
+[100%] Linking CXX executable mysql_client_test
+[100%] Built target mysql_client_test

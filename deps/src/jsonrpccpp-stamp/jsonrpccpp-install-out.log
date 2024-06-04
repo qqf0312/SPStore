@@ -1,0 +1,31 @@
+[ 31%] Built target jsonrpccommonStatic
+[ 57%] Built target jsonrpcclientStatic
+[100%] Built target jsonrpcserverStatic
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/version.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/jsonparser.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/client.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/errors.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/exception.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/procedure.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/specification.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/specificationparser.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/common/specificationwriter.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/client/batchcall.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/client/batchresponse.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/client/client.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/client/iclientconnector.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/requesthandlerfactory.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/abstractserver.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/abstractserverconnector.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/iprocedureinvokationhandler.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/iclientconnectionhandler.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/jsonrpccpp/server/connectors/httpserver.h
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libjsonrpccpp-common.a
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libjsonrpccpp-client.a
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libjsonrpccpp-server.a
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/pkgconfig/libjsonrpccpp-server.pc
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/pkgconfig/libjsonrpccpp-client.pc
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/pkgconfig/libjsonrpccpp-common.pc

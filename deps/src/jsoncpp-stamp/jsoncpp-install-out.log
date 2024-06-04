@@ -1,0 +1,20 @@
+Scanning dependencies of target jsoncpp_lib_static
+[ 25%] Building CXX object src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_value.cpp.o
+[ 50%] Building CXX object src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_reader.cpp.o
+[ 75%] Building CXX object src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/json_writer.cpp.o
+[100%] Linking CXX static library libjsoncpp.a
+[100%] Built target jsoncpp_lib_static
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libjsoncpp.a
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/allocator.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/assertions.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/autolink.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/config.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/features.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/forwards.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/json.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/reader.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/value.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/version.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/json/writer.h

@@ -1,0 +1,5 @@
+/home/ubuntu/ex_sharding/deps/lib/libsecp256k1.a
+/home/ubuntu/ex_sharding/deps/include/secp256k1_sha256.h
+/home/ubuntu/ex_sharding/deps/include/secp256k1_ecdh.h
+/home/ubuntu/ex_sharding/deps/include/secp256k1_recovery.h
+/home/ubuntu/ex_sharding/deps/include/secp256k1.h

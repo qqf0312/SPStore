@@ -1,0 +1,13 @@
+[100%] Built target snappy
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libsnappy.a
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/snappy-c.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/snappy-sinksource.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/snappy.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/snappy-stubs-public.h
+-- Old export file "/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets.cmake" will be replaced.  Removing files [/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets-noconfig.cmake].
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets.cmake
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets-noconfig.cmake
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyConfig.cmake
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyConfigVersion.cmake

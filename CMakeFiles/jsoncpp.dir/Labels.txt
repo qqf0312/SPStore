@@ -1,0 +1,13 @@
+# Target labels
+ jsoncpp
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/jsoncpp
+/home/ubuntu/ex_sharding/CMakeFiles/jsoncpp.rule
+/home/ubuntu/ex_sharding/CMakeFiles/jsoncpp-complete.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-install.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-download.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-update.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-patch.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-configure.rule
+/home/ubuntu/ex_sharding/deps/src/jsoncpp-stamp/jsoncpp-build.rule

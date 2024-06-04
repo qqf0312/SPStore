@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/cryptopp"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/cryptopp.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/cryptopp-complete.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-install.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-mkdir.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-download.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-update.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-patch.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-configure.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cryptopp"
+		],
+		"name" : "cryptopp"
+	}
+}

@@ -1,0 +1,7 @@
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/install/strip.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/edit_cache.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/snappy.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/install.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/list_install_components.dir
+/home/ubuntu/ex_sharding/deps/src/snappy/CMakeFiles/install/local.dir

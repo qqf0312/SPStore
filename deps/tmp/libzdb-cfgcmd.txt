@@ -1,0 +1,1 @@
+cmd='./configure;--with-mysql=/home/ubuntu/ex_sharding/deps/src/mysqlclient/scripts/mysql_config;--without-sqlite;--without-postgresql;--enable-shared=false;--enable-protected'

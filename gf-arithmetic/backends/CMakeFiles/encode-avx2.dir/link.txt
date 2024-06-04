@@ -1,0 +1,2 @@
+/usr/bin/ar qc libencode-avx2.a  CMakeFiles/encode-avx2.dir/encode_avx2.cpp.o CMakeFiles/encode-avx2.dir/lohi_table.cpp.o
+/usr/bin/ranlib libencode-avx2.a

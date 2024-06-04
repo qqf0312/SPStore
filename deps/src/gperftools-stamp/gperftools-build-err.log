@@ -1,0 +1,23 @@
+Makefile:3832: warning: overriding recipe for target 'debugallocation_test.sh'
+Makefile:3828: warning: ignoring old recipe for target 'debugallocation_test.sh'
+Makefile:3862: warning: overriding recipe for target 'heap-checker_debug_unittest.sh'
+Makefile:3858: warning: ignoring old recipe for target 'heap-checker_debug_unittest.sh'
+Makefile:3886: warning: overriding recipe for target 'heap-profiler_debug_unittest.sh'
+Makefile:3882: warning: ignoring old recipe for target 'heap-profiler_debug_unittest.sh'
+Makefile:4092: warning: overriding recipe for target 'sampling_debug_test.sh'
+Makefile:4088: warning: ignoring old recipe for target 'sampling_debug_test.sh'
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+ar: `u' modifier ignored since `D' is the default (see `U')
+Makefile:3832: warning: overriding recipe for target 'debugallocation_test.sh'
+Makefile:3828: warning: ignoring old recipe for target 'debugallocation_test.sh'
+Makefile:3862: warning: overriding recipe for target 'heap-checker_debug_unittest.sh'
+Makefile:3858: warning: ignoring old recipe for target 'heap-checker_debug_unittest.sh'
+Makefile:3886: warning: overriding recipe for target 'heap-profiler_debug_unittest.sh'
+Makefile:3882: warning: ignoring old recipe for target 'heap-profiler_debug_unittest.sh'
+Makefile:4092: warning: overriding recipe for target 'sampling_debug_test.sh'
+Makefile:4088: warning: ignoring old recipe for target 'sampling_debug_test.sh'

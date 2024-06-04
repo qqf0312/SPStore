@@ -1,0 +1,13 @@
+# Target labels
+ cryptopp
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/cryptopp
+/home/ubuntu/ex_sharding/CMakeFiles/cryptopp.rule
+/home/ubuntu/ex_sharding/CMakeFiles/cryptopp-complete.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-install.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-download.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-update.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-patch.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-configure.rule
+/home/ubuntu/ex_sharding/deps/src/cryptopp-stamp/cryptopp-build.rule

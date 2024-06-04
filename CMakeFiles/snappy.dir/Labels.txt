@@ -1,0 +1,13 @@
+# Target labels
+ snappy
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/snappy
+/home/ubuntu/ex_sharding/CMakeFiles/snappy.rule
+/home/ubuntu/ex_sharding/CMakeFiles/snappy-complete.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-install.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-download.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-update.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-patch.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-configure.rule
+/home/ubuntu/ex_sharding/deps/src/snappy-stamp/snappy-build.rule

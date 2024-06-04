@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/mysqlclient"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/mysqlclient.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/CMakeFiles/mysqlclient-complete.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-install.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-mkdir.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-download.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-update.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-patch.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-configure.rule"
+		},
+		{
+			"file" : "/home/ubuntu/ex_sharding/deps/src/mysqlclient-stamp/mysqlclient-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"mysqlclient"
+		],
+		"name" : "mysqlclient"
+	}
+}

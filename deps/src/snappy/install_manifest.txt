@@ -1,0 +1,9 @@
+/home/ubuntu/ex_sharding/deps/lib/libsnappy.a
+/home/ubuntu/ex_sharding/deps/include/snappy-c.h
+/home/ubuntu/ex_sharding/deps/include/snappy-sinksource.h
+/home/ubuntu/ex_sharding/deps/include/snappy.h
+/home/ubuntu/ex_sharding/deps/include/snappy-stubs-public.h
+/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets.cmake
+/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyTargets-noconfig.cmake
+/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyConfig.cmake
+/home/ubuntu/ex_sharding/deps/lib/cmake/Snappy/SnappyConfigVersion.cmake

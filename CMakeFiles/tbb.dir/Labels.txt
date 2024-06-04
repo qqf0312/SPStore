@@ -1,0 +1,13 @@
+# Target labels
+ tbb
+# Source files and their labels
+/home/ubuntu/ex_sharding/CMakeFiles/tbb
+/home/ubuntu/ex_sharding/CMakeFiles/tbb.rule
+/home/ubuntu/ex_sharding/CMakeFiles/tbb-complete.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-install.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-mkdir.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-download.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-update.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-patch.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-configure.rule
+/home/ubuntu/ex_sharding/deps/src/tbb-stamp/tbb-build.rule

@@ -1,0 +1,94 @@
+#include <fstream>
+#include <iostream>
+#include <map>
+#include <string>
+#include <vector>
+using namespace std;
+std::pair<string, int> SplitString(const string& s, const string& c)
+{
+    string::size_type pos1, pos2;
+    pos2 = s.find(c);
+    pos1 = 0;
+    int rw = 0;
+    if (s.substr(pos1, pos2 - pos1) == "W")
+    {
+        rw = 1;
+    }
+
+    pos1 = pos2 + c.size();
+    return make_pair(s.substr(pos1), rw);
+}
+
+int main()
+{
+    /*处理key.txt*/
+    ifstream in("key.txt");
+    ofstream out("key_no_duplicated.txt");
+    string filename;
+    string line;
+    vector<string> v;
+    map<string, int> m;
+    if (in)  // 有该文件
+    {
+        while (getline(in, line))  // line中不包括每行的换行符
+        {
+            if (line == "--------------------------")
+            {
+                if (v.size() > 0)
+                {
+                    for (int64_t i = 0; i < v.size(); i++)
+                    {
+                        auto p = SplitString(v[i], ":");
+                        map<string, int>::iterator it = m.find(p.first);
+                        if (it != m.end() && p.second == 0)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            m[p.first] = p.second;
+                        }
+                    }
+                    vector<string>().swap(v);
+                    for (auto its = m.begin(); its != m.end(); ++its)
+                    {
+                        out << its->second << "-" << its->first << endl;
+                    }
+                    out <<"---------"<<endl;
+                    map<string, int>().swap(m);
+                }
+                continue;
+            }
+            else
+            {
+                v.push_back(line);
+            }
+        }
+    }
+    else  // 没有该文件
+    {
+        std::cout << "no such file" << std::endl;
+    }
+    ifstream ins("nonce.txt");
+    ofstream outs("nonce_no_duplicated.txt");
+    string filenames;
+    string lines;
+    vector<string> vs;
+    map<string, int> ms;
+    if (ins)  // 有该文件
+    {
+        while (getline(ins, lines))  // line中不包括每行的换行符
+        {
+            if (lines != "******************")
+            {
+                
+                outs << lines << endl;
+            }
+        }
+    }
+    else  // 没有该文件
+    {
+        std::cout << "no such file" << std::endl;
+    }
+    return 0;
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libencode-basic.a  CMakeFiles/encode-basic.dir/encode_basic.cpp.o CMakeFiles/encode-basic.dir/lohi_table.cpp.o
+/usr/bin/ranlib libencode-basic.a

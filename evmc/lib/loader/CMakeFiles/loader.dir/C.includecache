@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/ex_sharding/evmc/lib/loader/loader.c
+evmc/loader.h
+-
+evmc/evmc.h
+-
+evmc/helpers.h
+-
+stdint.h
+-
+string.h
+-
+Windows.h
+-
+dlfcn.h
+-
+
+evmc/include/evmc/evmc.h
+stddef.h
+-
+stdint.h
+-
+
+evmc/include/evmc/helpers.h
+evmc/evmc.h
+-
+
+evmc/include/evmc/loader.h
+

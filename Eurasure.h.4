@@ -1,0 +1,144 @@
+#pragma once
+#include <erasure-codes/liberasure.h>
+#include <libblockchain/BlockChainInterface.h>
+#include <libdevcore/Common.h>
+#include <libdevcore/FixedHash.h>
+#include <libethcore/Block.h>
+#include <libnetwork/Common.h>
+#include <libp2p/P2PInterface.h>
+
+#include <algorithm>
+#include <set>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
+#include "rocksdb/db.h"
+#include "rocksdb/options.h"
+#include "rocksdb/slice.h"
+
+#define BLOCKS_SIZE_BYTE 3  //默认记录区块大小的字节数
+#define blockchainManager std::shared_ptr<dev::blockchain::BlockChainInterface>
+#define StatePoint std::pair<std::string, std::string>
+#define NodeAddr dev::h512
+namespace ec
+{
+class EurasureP2P;
+class Eurasure : public std::enable_shared_from_this<Eurasure>
+{
+public:
+    // typedef std::shared_ptr<Eurasure> Ptr;
+    Eurasure(int64_t k, int64_t m, int64_t c, NodeAddr const& nodeid, std::vector<NodeAddr> sealers,
+        std::string path, ec::EurasureP2P* eurasure_p2p, rocksdb::DB* _vc, rocksdb::DB* _before,
+        blockchainManager _blockchain, int _group_size)
+      : ec_k(k),
+        ec_m(m),
+        ec_c(c),
+        ec_nodeid(nodeid),
+        ec_sealers(sealers),
+        ec_DBPath(path),
+        ec_blockchain(_blockchain),
+        ec_eurasure_p2p(eurasure_p2p),
+        vc_db(_vc),
+        before_ec_db(_before),
+        group_len(_group_size)
+    {}
+    //初始化EC模块
+    bool InitEurasure();
+
+    //生成Merkle root
+    // h256 constructMerkleRoot();
+
+    //并行ec线程
+    void thread_ec_task(std::pair<uint8_t*, int64_t> state_bytes_data);
+
+    //编解码模块
+    std::pair<uint8_t*, int64_t> preprocess(
+        int block_number, int groupid, std::map<int, std::string> const& states);
+    std::pair<uint8_t**, int64_t> encode(std::pair<uint8_t*, int64_t> blocks_rlp_data);
+    std::string decode(unsigned int coding_epoch, std::string key);
+    bool checkState(std::string& key, std::string& data, std::string& maincommit, std::string& maincommit_proof, std::string& subcommit, std::string& subcommit_proof,std::string& value);
+    bool checkChunk();
+    void generate_ptrs(size_t data_size, uint8_t* data, erasure_bool* present, uint8_t** ptrs);
+    std::string GetChunkDataKey(unsigned int coding_epoch, unsigned group_id, unsigned chunk_pos);
+    //写chunk 模块
+    void saveChunk(std::map<int, std::string> const& states, int block_number, int groupid);
+    bool writeDB(unsigned int coding_epoch, unsigned int groupid,
+        std::pair<uint8_t**, int64_t> const& chunk);
+    std::string getKVAndProof(std::string data, std::string key,int block_number);
+    std::string constructMerkleRoot(int pos, int group_num, int block_number);
+    void makeMerkleRoot(int block_number);
+    // bool verifyChunkMerkleRoot(
+    //     std::map<int, std::map<int, std::string>>& level_to_chunk, int block_number, int chunk_pos);
+    bool verifyChunkMerkleRoot(
+        std::vector<std::string>& level_to_chunk, int block_number, int chunk_pos, int group_id);
+    void convertVectorToMap(
+        std::vector<std::string> input, std::map<int, std::map<int, std::string>>& level_to_chunk);
+    void convertChunkToMap(
+        std::string chunkdata, std::map<std::string, std::string>& kvmap);
+    //读chunk模块
+    // void readChunkFromDB(int block_number, int group_num, int pos, std::queue<std::string>& q);
+    void readChunkFromDB(int block_number, int group_num, int pos, std::vector<std::string>& v);
+    std::string readChunk(unsigned int coding_epoch, std::string key);
+    std::string readChunk(unsigned int coding_epoch, unsigned group_id, unsigned chunk_pos);
+    std::vector<std::string> readChunkAndComputeMerkleHashs(
+        int block_number, int chunk_pos, int group_id);
+    void findKeyInWhichChunk(
+        int const& block_number, std::string const& key, int& group, int& chunk_num);
+    std::string readOneChunkFromDB(int block_number, int group_num, int pos);
+    //读状态模块
+    std::string getState(unsigned int block_num, std::string key);
+    std::string localReadState(
+        unsigned int block_num, unsigned int group_id, unsigned int chunk_pos, std::string key);
+    std::string remoteReadState(
+        unsigned int block_num, std::string key, NodeAddr const& target_nodeid);
+
+    //计算chunk_set模块
+    std::pair<int*, int*> get_my_chunk_set(unsigned int groupid);
+    int* get_distinct_chunk_set(unsigned int coding_epoch);
+    int* maxLen(std::map<int, std::string> const& states, int64_t data_bound);
+
+
+    void statistic();
+    int64_t findSeqInSealers();
+    void getVCCommit(int block_number,int pos, std::string & output);
+
+    int64_t getK() { return ec_k; }
+    int64_t getM() { return ec_m; }
+    int64_t getC() { return ec_c; }
+    int getCurrentBlockNum() { return ec_current_block_num; }
+    rocksdb::DB* getDBHandler() { return ec_db; }
+    unsigned int getPosition() { return ec_position_in_sealers; }
+    long getStorageSize() { return ec_storage_size; }
+    int64_t getCompleteEpoch() { return complete_coding_epoch; }
+    int getGroupLen() { return group_len; }
+    void setCompleteCodingEpoch(int epoch) { complete_coding_epoch = epoch; }
+    void setCurrentBlockNum(int current_block_num) { ec_current_block_num = current_block_num; }
+
+private:
+    NodeAddr ec_nodeid;                                      //节点ID
+    erasure_encoder_flags ec_mode = ERASURE_FORCE_ADV_IMPL;  // ec编码模式
+    int64_t ec_k;                                            //数据块个数
+    int64_t ec_m;                                            //校验块个数
+    int64_t ec_c;                                            //副本个数
+    std::vector<NodeAddr> ec_sealers;                        //所有节点地址
+    unsigned int ec_position_in_sealers;  //本节点在所有节点中的相对位置
+    rocksdb::DB* ec_db;                   // DB句柄
+    rocksdb::DB* vc_db;                   // DB句柄
+    rocksdb::DB* before_ec_db;
+    std::string ec_DBPath;               // DB路径
+    long ec_storage_size = 0;            // EC存储开销
+    ec::EurasureP2P* ec_eurasure_p2p;    // EC网络模块句柄
+    int64_t complete_coding_epoch = -1;  //已完成ECepoch
+    int ec_current_block_num = 0;
+    blockchainManager ec_blockchain;  //区块链句柄
+    int group_len = 16;
+    const int ec_sub_commit_size = 32;
+    const int ec_byte_alignment = 64;
+    const int ec_group_num = 16;
+    const int partition_key_mappinto_vc_bytes_num = 1;
+    const int init_size = 5000;
+    const int proof_and_commit_len = 49;
+    const int one_state_with_kv_size = 36;
+};
+}  // namespace ec

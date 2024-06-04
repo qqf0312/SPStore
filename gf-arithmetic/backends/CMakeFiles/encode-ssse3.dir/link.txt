@@ -1,0 +1,2 @@
+/usr/bin/ar qc libencode-ssse3.a  CMakeFiles/encode-ssse3.dir/encode_sse.cpp.o CMakeFiles/encode-ssse3.dir/lohi_table.cpp.o
+/usr/bin/ranlib libencode-ssse3.a

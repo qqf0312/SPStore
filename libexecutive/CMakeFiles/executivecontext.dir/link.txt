@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexecutivecontext.a  CMakeFiles/executivecontext.dir/ExecutionResult.cpp.o CMakeFiles/executivecontext.dir/Executive.cpp.o CMakeFiles/executivecontext.dir/ExtVM.cpp.o
+/usr/bin/ranlib libexecutivecontext.a

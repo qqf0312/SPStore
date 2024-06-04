@@ -1,0 +1,5 @@
+-- Enabling RTTI
+-- JNI library is disabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/ex_sharding/deps/src/rocksdb

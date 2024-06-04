@@ -1,0 +1,2 @@
+/usr/bin/ar qc libevm.a  CMakeFiles/evm.dir/EVMC.cpp.o CMakeFiles/evm.dir/ExtVMFace.cpp.o CMakeFiles/evm.dir/VMFactory.cpp.o
+/usr/bin/ranlib libevm.a

@@ -1,0 +1,3 @@
+repository='external project URL'
+module='/home/qqf/zcy/cryptopp_bccc6443.tar.gz'
+tag=''

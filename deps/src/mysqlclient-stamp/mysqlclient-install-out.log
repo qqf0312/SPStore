@@ -1,0 +1,104 @@
+[  0%] Built target INFO_SRC
+[  0%] Built target abi_check
+[  0%] Built target INFO_BIN
+[  6%] Built target zlib
+[ 12%] Built target yassl
+[ 21%] Built target taocrypt
+[ 40%] Built target strings
+[ 42%] Built target vio
+[ 45%] Built target regex
+[ 82%] Built target mysys
+[ 83%] Built target dbug
+[ 88%] Built target mysys_ssl
+[ 89%] Built target my_print_defaults
+[ 90%] Built target comp_err
+[ 90%] Built target resolveip
+[ 90%] Built target GenError
+[ 91%] Built target perror
+[ 96%] Built target clientlib
+[ 97%] Built target libmysql
+[ 98%] Built target mysqlclient
+[ 99%] Built target libmysql_api_test
+[100%] Built target mysql_client_test
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/./COPYING
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/./README
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/docs/INFO_SRC
+-- Installing: /home/ubuntu/ex_sharding/deps/docs/INFO_BIN
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/./COPYING-debug
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/./README-debug
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql_com.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_command.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql_time.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_list.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_alloc.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/typelib.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/binary_log_types.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_dbug.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/m_string.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_sys.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_xml.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql_embed.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_thread.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_thread_local.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/decimal.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/errmsg.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_global.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_getopt.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/sslopt-longopts.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_dir.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/sslopt-vars.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/sslopt-case.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/sql_common.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/keycache.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/m_ctype.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_compiler.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql_com_server.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/my_byteorder.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/byte_order_generic.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/byte_order_generic_x86.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/little_endian.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/big_endian.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/thr_cond.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/thr_mutex.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/thr_rwlock.h
+-- Installing: /home/ubuntu/ex_sharding/deps/include/mysql_version.h
+-- Installing: /home/ubuntu/ex_sharding/deps/include/my_config.h
+-- Installing: /home/ubuntu/ex_sharding/deps/include/mysqld_ername.h
+-- Installing: /home/ubuntu/ex_sharding/deps/include/mysqld_error.h
+-- Installing: /home/ubuntu/ex_sharding/deps/include/sql_state.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/get_password.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/service_my_snprintf.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/plugin_auth_common.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/service_mysql_alloc.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_transaction.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_sp.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_file.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_idle.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/psi_memory.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_stage.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_mdl.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/psi.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_thread.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_ps.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_statement.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_memory.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/psi_base.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_socket.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/psi/mysql_table.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/client_plugin.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/mysql_lex_string.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/client_plugin.h.pp
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/plugin_trace.h
+-- Up-to-date: /home/ubuntu/ex_sharding/deps/include/mysql/client_authentication.h
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libmysqlclient.a
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libmysqlclient.so.18.4.
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libmysqlclient.so.18
+-- Installing: /home/ubuntu/ex_sharding/deps/lib/libmysqlclient.so
+-- Installing: /home/ubuntu/ex_sharding/deps/bin/my_print_defaults
+-- Installing: /home/ubuntu/ex_sharding/deps/bin/perror
+-- Installing: /home/ubuntu/ex_sharding/deps/bin/mysql_config

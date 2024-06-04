@@ -1,0 +1,5 @@
+Name: libjsonrpccpp-client
+Description: A C++ client implementation of json-rpc.
+Version: 0.7.0
+Libs: -L/home/ubuntu/ex_sharding/deps/lib/ -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-client -lcurl
+Cflags: -I/home/ubuntu/ex_sharding/deps/include
