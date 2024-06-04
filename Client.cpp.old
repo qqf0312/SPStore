@@ -1,9 +1,0 @@
-#include "Client.h"
-bool Client::initClient()
-{
-    m_mptstate = blockchain_manager->getstateFactory()->getMPTState();
-}
-void Client::getState(std::string key)
-{
-    std::cout << "subcommit size = " << m_mptstate->getsubcommitsize();
-}
